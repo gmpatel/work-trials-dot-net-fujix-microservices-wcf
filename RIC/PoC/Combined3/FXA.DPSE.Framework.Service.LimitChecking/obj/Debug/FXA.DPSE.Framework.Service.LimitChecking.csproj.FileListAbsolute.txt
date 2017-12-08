@@ -1,0 +1,15 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\Framework.config
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Service.LimitChecking.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Service.LimitChecking.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Common.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Service.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\Autofac.Integration.Wcf.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\log4net.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\Newtonsoft.Json.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Common.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\FXA.DPSE.Framework.Service.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\log4net.xml
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\bin\Debug\Newtonsoft.Json.xml
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\obj\Debug\FXA.DPSE.Framework.Service.LimitChecking.csprojResolveAssemblyReference.cache
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\obj\Debug\FXA.DPSE.Framework.Service.LimitChecking.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.LimitChecking\obj\Debug\FXA.DPSE.Framework.Service.LimitChecking.pdb

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.DipsPayloadModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PayloadDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PayloadId" Type="bigint" Nullable="false" />
+    <Property Name="ElectronicTraceTrackingId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Payloads">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionId" Type="bigint" Nullable="false" />
+    <Property Name="ChannelType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateTimeCreated" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="RelativePath" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="LockedBy" Type="uniqueidentifier" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="DateTimeLocked" Type="datetime2" Precision="7" />
+    <Property Name="Transported" Type="bit" Nullable="false" />
+    <Property Name="DateTimeTransported" Type="datetime2" Precision="7" />
+  </EntityType>
+  <Association Name="FK_Payload">
+    <End Role="Payloads" Type="Self.Payloads" Multiplicity="1" />
+    <End Role="PayloadDetails" Type="Self.PayloadDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payloads">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PayloadDetails">
+        <PropertyRef Name="PayloadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FXADPSEDBDipsPayloadModelStoreContainer">
+    <EntitySet Name="PayloadDetails" EntityType="Self.PayloadDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payloads" EntityType="Self.Payloads" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Payload" Association="Self.FK_Payload">
+      <End Role="Payloads" EntitySet="Payloads" />
+      <End Role="PayloadDetails" EntitySet="PayloadDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

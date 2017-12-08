@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.DB.TraceTracking\bin\Debug\FXA.DPSE.DB.TraceTracking.dacpac
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.DB.TraceTracking\bin\Debug\FXA.DPSE.DB.TraceTracking.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.DB.TraceTracking\bin\Debug\FXA.DPSE.DB.TraceTracking.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.DB.TraceTracking\obj\Debug\FXA.DPSE.DB.TraceTracking.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.DB.TraceTracking\obj\Debug\FXA.DPSE.DB.TraceTracking.pdb

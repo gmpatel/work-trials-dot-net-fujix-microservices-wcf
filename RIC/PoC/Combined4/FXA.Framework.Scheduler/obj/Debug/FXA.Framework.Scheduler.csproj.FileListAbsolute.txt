@@ -1,0 +1,10 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\FXA.Framework.Scheduler.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\FXA.Framework.Scheduler.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Common.Logging.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Quartz.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Common.Logging.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Common.Logging.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Quartz.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\bin\Debug\Quartz.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\obj\Debug\FXA.Framework.Scheduler.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Scheduler\obj\Debug\FXA.Framework.Scheduler.pdb

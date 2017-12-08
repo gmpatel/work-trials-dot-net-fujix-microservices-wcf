@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Service.ShadowPost</RootNamespace>
+    <AssemblyName>FXA.DPSE.Service.ShadowPost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\HeaderValidationBehaviorAttribute.cs" />
+    <Compile Include="Core\MessageHeaderValidator.cs" />
+    <Compile Include="IShadowPostService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShadowPostResponseHelper.cs" />
+    <Compile Include="ShadowPostService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9b36379c-e561-4923-97a9-1b5175c88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj">
+      <Project>{b0b59e31-f4e0-438f-8dd1-7655c121d7af}</Project>
+      <Name>FXA.DPSE.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.ShadowPost.Business\FXA.DPSE.Service.ShadowPost.Business.csproj">
+      <Project>{e298b08f-7e7d-4503-92d1-b3a10687211b}</Project>
+      <Name>FXA.DPSE.Service.ShadowPost.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.ShadowPost.Common\FXA.DPSE.Service.ShadowPost.Common.csproj">
+      <Project>{1ee69caa-3ad8-4f1f-8eb8-e8e7145c80fe}</Project>
+      <Name>FXA.DPSE.Service.ShadowPost.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.ShadowPost.Facade\FXA.DPSE.Service.ShadowPost.Facade.csproj">
+      <Project>{82eae657-5e1a-408f-b046-2531e2b8969a}</Project>
+      <Name>FXA.DPSE.Service.ShadowPost.Facade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

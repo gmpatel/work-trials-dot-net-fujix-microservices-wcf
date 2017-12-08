@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.Service.TraceTracking.Common\bin\Release\FXA.DPSE.Service.TraceTracking.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.Service.TraceTracking.Common\bin\Release\FXA.DPSE.Service.TraceTracking.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.Service.TraceTracking.Common\obj\Release\FXA.DPSE.Service.TraceTracking.Common.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.Service.TraceTracking.Common\obj\Release\FXA.DPSE.Service.TraceTracking.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\TraceTracking\FXA.DPSE.Service.TraceTracking.Common\obj\Release\FXA.DPSE.Service.TraceTracking.Common.pdb

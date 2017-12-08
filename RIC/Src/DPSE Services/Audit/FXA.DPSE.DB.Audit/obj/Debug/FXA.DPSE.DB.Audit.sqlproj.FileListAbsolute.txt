@@ -1,0 +1,6 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\bin\Debug\FXA.DPSE.DB.Audit.dacpac
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\bin\Debug\FXA.DPSE.DB.Audit.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\bin\Debug\FXA.DPSE.DB.Audit.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\obj\Debug\FXA.DPSE.DB.Audit.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\obj\Debug\FXA.DPSE.DB.Audit.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.DB.Audit\bin\Debug\Deploy.ps1

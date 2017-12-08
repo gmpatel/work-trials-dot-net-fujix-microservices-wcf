@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <connectionStrings>
+    <add name="ShadowPostDb" connectionString='@Model.GetValue("ShadowPostDbConnectionString")' providerName="System.Data.EntityClient" xdt:Transform="SetAttributes(connectionString)" />
+  </connectionStrings>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+  <serviceConfig xdt:Transform="Replace">
+    <InternetBanking url='@Model.GetValue("InternetBankingUrl")' timeOutSeconds="5" enabled="false" />
+  </serviceConfig>
+  <system.webServer>
+    <directoryBrowse enabled='@Model.GetValue("directoryBrowseEnabled")' xdt:Transform="SetAttributes" />
+  </system.webServer>
+</configuration>

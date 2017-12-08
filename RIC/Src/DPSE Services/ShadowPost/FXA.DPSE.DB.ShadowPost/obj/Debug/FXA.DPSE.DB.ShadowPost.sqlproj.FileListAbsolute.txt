@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\ShadowPost\FXA.DPSE.DB.ShadowPost\bin\Debug\FXA.DPSE.DB.ShadowPost.dacpac
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\ShadowPost\FXA.DPSE.DB.ShadowPost\bin\Debug\FXA.DPSE.DB.ShadowPost.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\ShadowPost\FXA.DPSE.DB.ShadowPost\bin\Debug\FXA.DPSE.DB.ShadowPost.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\ShadowPost\FXA.DPSE.DB.ShadowPost\obj\Debug\FXA.DPSE.DB.ShadowPost.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\ShadowPost\FXA.DPSE.DB.ShadowPost\obj\Debug\FXA.DPSE.DB.ShadowPost.pdb

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FXA.DPSE.DB.PaymentInstructionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BSBCode" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AccountName">
+          <Key>
+            <PropertyRef Name="AccountId" />
+            <PropertyRef Name="AccountName" />
+          </Key>
+          <Property Name="AccountId" Type="bigint" Nullable="false" />
+          <Property Name="AccountName" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClientSession">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SessionId" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="UserId1" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserId2" Type="nvarchar" MaxLength="50" />
+          <Property Name="DeviceId" Type="nvarchar" MaxLength="100" />
+          <Property Name="IpAddressV4" Type="nvarchar" MaxLength="50" />
+          <Property Name="IpAddressV6" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClientName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClientVersion" Type="nvarchar" MaxLength="50" />
+          <Property Name="OS" Type="nvarchar" MaxLength="50" />
+          <Property Name="OSVersion" Type="nvarchar" MaxLength="50" />
+          <Property Name="CaptureDevice" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PaymentInstruction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TotalTransactionAmountInCents" Type="int" Nullable="false" />
+          <Property Name="ChannelType" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ChequeCount" Type="int" Nullable="false" />
+          <Property Name="TransactionNarrative" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TrackingId" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ClientSessionId" Type="bigint" Nullable="false" />
+          <Property Name="AccountId" Type="bigint" Nullable="false" />
+          <Property Name="ProcessingDateTime" Type="datetime" />
+          <Property Name="BatchNumber" Type="nvarchar" MaxLength="8" />
+          <Property Name="BatchPath" Type="nvarchar" MaxLength="255" />
+          <Property Name="BatchCreatedDateTime" Type="datetime" />
+          <Property Name="TransportedDateTime" Type="datetime" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Voucher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PaymentInstructionId" Type="bigint" Nullable="false" />
+          <Property Name="TrackingId" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="SequenceId" Type="int" Nullable="false" />
+          <Property Name="VoucherType" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="TransactionCode" Type="nvarchar" MaxLength="3" Nullable="false" />
+          <Property Name="AuxDom" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ProcessingDateTime" Type="datetime" Nullable="false" />
+          <Property Name="BSB" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="AccountNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="AmountInCents" Type="int" Nullable="false" />
+          <Property Name="IsNonPostingCheque" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VoucherImage">
+          <Key>
+            <PropertyRef Name="VoucherId" />
+          </Key>
+          <Property Name="VoucherId" Type="bigint" Nullable="false" />
+          <Property Name="FrontImage" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="RearImage" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FrontImageSHA" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="RearImageSHA" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AccountName_Account">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="AccountName" Type="Self.AccountName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AccountName">
+              <PropertyRef Name="AccountId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaymentInstruction_Account">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PaymentInstruction">
+              <PropertyRef Name="AccountId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaymentInstruction_ClientSession">
+          <End Role="ClientSession" Type="Self.ClientSession" Multiplicity="1" />
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClientSession">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PaymentInstruction">
+              <PropertyRef Name="ClientSessionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Voucher_PaymentInstruction">
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="1" />
+          <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentInstruction">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Voucher">
+              <PropertyRef Name="PaymentInstructionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VoucherImage_Voucher">
+          <End Role="Voucher" Type="Self.Voucher" Multiplicity="1" />
+          <End Role="VoucherImage" Type="Self.VoucherImage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Voucher">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VoucherImage">
+              <PropertyRef Name="VoucherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FXADPSEDBPaymentInstructionModelStoreContainer">
+          <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AccountName" EntityType="Self.AccountName" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ClientSession" EntityType="Self.ClientSession" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PaymentInstruction" EntityType="Self.PaymentInstruction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Voucher" EntityType="Self.Voucher" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VoucherImage" EntityType="Self.VoucherImage" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AccountName_Account" Association="Self.FK_AccountName_Account">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="AccountName" EntitySet="AccountName" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaymentInstruction_Account" Association="Self.FK_PaymentInstruction_Account">
+            <End Role="Account" EntitySet="Account" />
+            <End Role="PaymentInstruction" EntitySet="PaymentInstruction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaymentInstruction_ClientSession" Association="Self.FK_PaymentInstruction_ClientSession">
+            <End Role="ClientSession" EntitySet="ClientSession" />
+            <End Role="PaymentInstruction" EntitySet="PaymentInstruction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Voucher_PaymentInstruction" Association="Self.FK_Voucher_PaymentInstruction">
+            <End Role="PaymentInstruction" EntitySet="PaymentInstruction" />
+            <End Role="Voucher" EntitySet="Voucher" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VoucherImage_Voucher" Association="Self.FK_VoucherImage_Voucher">
+            <End Role="Voucher" EntitySet="Voucher" />
+            <End Role="VoucherImage" EntitySet="VoucherImage" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FXA.DPSE.DB.PaymentInstructionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BSBCode" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccountType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AccountNames" Relationship="Self.FK_AccountName_Account" FromRole="Account" ToRole="AccountName" />
+          <NavigationProperty Name="PaymentInstructions" Relationship="Self.FK_PaymentInstruction_Account" FromRole="Account" ToRole="PaymentInstruction" />
+        </EntityType>
+        <EntityType Name="AccountName">
+          <Key>
+            <PropertyRef Name="AccountId" />
+            <PropertyRef Name="AccountName1" />
+          </Key>
+          <Property Name="AccountId" Type="Int64" Nullable="false" />
+          <Property Name="AccountName1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_AccountName_Account" FromRole="AccountName" ToRole="Account" />
+        </EntityType>
+        <EntityType Name="ClientSession">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserId2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DeviceId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IpAddressV4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IpAddressV6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClientName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClientVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OSVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CaptureDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PaymentInstructions" Relationship="Self.FK_PaymentInstruction_ClientSession" FromRole="ClientSession" ToRole="PaymentInstruction" />
+          <Property Name="SessionId" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PaymentInstruction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TotalTransactionAmountInCents" Type="Int32" Nullable="false" />
+          <Property Name="ChannelType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChequeCount" Type="Int32" Nullable="false" />
+          <Property Name="TrackingId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClientSessionId" Type="Int64" Nullable="false" />
+          <Property Name="AccountId" Type="Int64" Nullable="false" />
+          <Property Name="ProcessingDateTime" Type="DateTime" Precision="3" />
+          <Property Name="BatchPath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="BatchCreatedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="TransportedDateTime" Type="DateTime" Precision="3" ConcurrencyMode="Fixed" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Account" Relationship="Self.FK_PaymentInstruction_Account" FromRole="PaymentInstruction" ToRole="Account" />
+          <NavigationProperty Name="ClientSession" Relationship="Self.FK_PaymentInstruction_ClientSession" FromRole="PaymentInstruction" ToRole="ClientSession" />
+          <NavigationProperty Name="Vouchers" Relationship="Self.FK_Voucher_PaymentInstruction" FromRole="PaymentInstruction" ToRole="Voucher" />
+          <Property Name="TransactionNarrative" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BatchNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Voucher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PaymentInstructionId" Type="Int64" Nullable="false" />
+          <Property Name="TrackingId" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SequenceId" Type="Int32" Nullable="false" />
+          <Property Name="VoucherType" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TransactionCode" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AuxDom" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProcessingDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BSB" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AccountNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AmountInCents" Type="Int32" Nullable="false" />
+          <Property Name="IsNonPostingCheque" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PaymentInstruction" Relationship="Self.FK_Voucher_PaymentInstruction" FromRole="Voucher" ToRole="PaymentInstruction" />
+          <NavigationProperty Name="VoucherImage" Relationship="Self.FK_VoucherImage_Voucher" FromRole="Voucher" ToRole="VoucherImage" />
+        </EntityType>
+        <EntityType Name="VoucherImage">
+          <Key>
+            <PropertyRef Name="VoucherId" />
+          </Key>
+          <Property Name="VoucherId" Type="Int64" Nullable="false" />
+          <Property Name="FrontImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RearImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FrontImageSHA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RearImageSHA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Voucher" Relationship="Self.FK_VoucherImage_Voucher" FromRole="VoucherImage" ToRole="Voucher" />
+        </EntityType>
+        <Association Name="FK_AccountName_Account">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="AccountName" Type="Self.AccountName" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AccountName">
+              <PropertyRef Name="AccountId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaymentInstruction_Account">
+          <End Role="Account" Type="Self.Account" Multiplicity="1" />
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Account">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PaymentInstruction">
+              <PropertyRef Name="AccountId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaymentInstruction_ClientSession">
+          <End Role="ClientSession" Type="Self.ClientSession" Multiplicity="1" />
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClientSession">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PaymentInstruction">
+              <PropertyRef Name="ClientSessionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Voucher_PaymentInstruction">
+          <End Role="PaymentInstruction" Type="Self.PaymentInstruction" Multiplicity="1" />
+          <End Role="Voucher" Type="Self.Voucher" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentInstruction">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Voucher">
+              <PropertyRef Name="PaymentInstructionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VoucherImage_Voucher">
+          <End Role="Voucher" Type="Self.Voucher" Multiplicity="1" />
+          <End Role="VoucherImage" Type="Self.VoucherImage" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Voucher">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VoucherImage">
+              <PropertyRef Name="VoucherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PaymentInstructionDb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
+          <EntitySet Name="AccountNames" EntityType="Self.AccountName" />
+          <EntitySet Name="ClientSessions" EntityType="Self.ClientSession" />
+          <EntitySet Name="PaymentInstructions" EntityType="Self.PaymentInstruction" />
+          <EntitySet Name="Vouchers" EntityType="Self.Voucher" />
+          <EntitySet Name="VoucherImages" EntityType="Self.VoucherImage" />
+          <AssociationSet Name="FK_AccountName_Account" Association="Self.FK_AccountName_Account">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="AccountName" EntitySet="AccountNames" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaymentInstruction_Account" Association="Self.FK_PaymentInstruction_Account">
+            <End Role="Account" EntitySet="Accounts" />
+            <End Role="PaymentInstruction" EntitySet="PaymentInstructions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaymentInstruction_ClientSession" Association="Self.FK_PaymentInstruction_ClientSession">
+            <End Role="ClientSession" EntitySet="ClientSessions" />
+            <End Role="PaymentInstruction" EntitySet="PaymentInstructions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Voucher_PaymentInstruction" Association="Self.FK_Voucher_PaymentInstruction">
+            <End Role="PaymentInstruction" EntitySet="PaymentInstructions" />
+            <End Role="Voucher" EntitySet="Vouchers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VoucherImage_Voucher" Association="Self.FK_VoucherImage_Voucher">
+            <End Role="Voucher" EntitySet="Vouchers" />
+            <End Role="VoucherImage" EntitySet="VoucherImages" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FXADPSEDBPaymentInstructionModelStoreContainer" CdmEntityContainer="PaymentInstructionDb">
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.Account">
+              <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="BSBCode" ColumnName="BSBCode" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AccountNames">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.AccountName">
+              <MappingFragment StoreEntitySet="AccountName">
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="AccountName1" ColumnName="AccountName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClientSessions">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.ClientSession">
+              <MappingFragment StoreEntitySet="ClientSession">
+                <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId1" ColumnName="UserId1" />
+                <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+                <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+                <ScalarProperty Name="IpAddressV4" ColumnName="IpAddressV4" />
+                <ScalarProperty Name="IpAddressV6" ColumnName="IpAddressV6" />
+                <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+                <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+                <ScalarProperty Name="OS" ColumnName="OS" />
+                <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+                <ScalarProperty Name="CaptureDevice" ColumnName="CaptureDevice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PaymentInstructions">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.PaymentInstruction">
+              <MappingFragment StoreEntitySet="PaymentInstruction">
+                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+                <ScalarProperty Name="TransactionNarrative" ColumnName="TransactionNarrative" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TotalTransactionAmountInCents" ColumnName="TotalTransactionAmountInCents" />
+                <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+                <ScalarProperty Name="ChequeCount" ColumnName="ChequeCount" />
+                <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+                <ScalarProperty Name="ClientSessionId" ColumnName="ClientSessionId" />
+                <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+                <ScalarProperty Name="ProcessingDateTime" ColumnName="ProcessingDateTime" />
+                <ScalarProperty Name="BatchPath" ColumnName="BatchPath" />
+                <ScalarProperty Name="BatchCreatedDateTime" ColumnName="BatchCreatedDateTime" />
+                <ScalarProperty Name="TransportedDateTime" ColumnName="TransportedDateTime" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vouchers">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.Voucher">
+              <MappingFragment StoreEntitySet="Voucher">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PaymentInstructionId" ColumnName="PaymentInstructionId" />
+                <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+                <ScalarProperty Name="SequenceId" ColumnName="SequenceId" />
+                <ScalarProperty Name="VoucherType" ColumnName="VoucherType" />
+                <ScalarProperty Name="TransactionCode" ColumnName="TransactionCode" />
+                <ScalarProperty Name="AuxDom" ColumnName="AuxDom" />
+                <ScalarProperty Name="ProcessingDateTime" ColumnName="ProcessingDateTime" />
+                <ScalarProperty Name="BSB" ColumnName="BSB" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="AmountInCents" ColumnName="AmountInCents" />
+                <ScalarProperty Name="IsNonPostingCheque" ColumnName="IsNonPostingCheque" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VoucherImages">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.VoucherImage">
+              <MappingFragment StoreEntitySet="VoucherImage">
+                <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+                <ScalarProperty Name="FrontImage" ColumnName="FrontImage" />
+                <ScalarProperty Name="RearImage" ColumnName="RearImage" />
+                <ScalarProperty Name="FrontImageSHA" ColumnName="FrontImageSHA" />
+                <ScalarProperty Name="RearImageSHA" ColumnName="RearImageSHA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WCFMock</id>
+    <version>$version$</version>
+    <authors>FXA</authors>
+    <description>Provides framework for WCF REST mocking in unit test projects</description>
+  </metadata>
+</package>

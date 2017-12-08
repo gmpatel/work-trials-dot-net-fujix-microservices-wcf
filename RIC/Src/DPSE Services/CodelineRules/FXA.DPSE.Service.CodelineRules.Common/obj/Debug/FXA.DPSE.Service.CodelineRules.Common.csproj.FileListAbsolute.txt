@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\bin\Debug\FXA.DPSE.Service.CodelineRules.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\bin\Debug\FXA.DPSE.Service.CodelineRules.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\obj\Debug\FXA.DPSE.Service.CodelineRules.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\obj\Debug\FXA.DPSE.Service.CodelineRules.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\obj\Debug\FXA.DPSE.Service.CodelineRules.Common.csprojResolveAssemblyReference.cache

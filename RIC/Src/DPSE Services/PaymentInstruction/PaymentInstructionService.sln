@@ -1,0 +1,186 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{18947E38-C56C-48A1-9BB4-20472DB10D09}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FXA.DPSE.DB.PaymentInstruction", "FXA.DPSE.DB.PaymentInstruction\FXA.DPSE.DB.PaymentInstruction.sqlproj", "{E55BF1F6-A471-4807-8C70-4C7975431074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.DataAccess", "FXA.DPSE.Service.PaymentInstruction.DataAccess\FXA.DPSE.Service.PaymentInstruction.DataAccess.csproj", "{74E80C7A-3A0E-4601-A259-00227DF61A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Business", "FXA.DPSE.Service.PaymentInstruction.Business\FXA.DPSE.Service.PaymentInstruction.Business.csproj", "{4F1648F6-C19C-4C13-A969-4DF9672C6A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint", "FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint\FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint.csproj", "{C9AFF430-F9DB-4564-8892-36BC54D0EC88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction", "FXA.DPSE.Service.PaymentInstruction\FXA.DPSE.Service.PaymentInstruction.csproj", "{D3A01500-D630-4550-A620-99BE80E3F668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Common", "FXA.DPSE.Service.PaymentInstruction.Common\FXA.DPSE.Service.PaymentInstruction.Common.csproj", "{06D292D5-144D-4304-A4A8-57B6A8111004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Business.Entities", "FXA.DPSE.Service.PaymentInstruction.Business.Entities\FXA.DPSE.Service.PaymentInstruction.Business.Entities.csproj", "{D46F4929-D495-4D54-B34C-647E7899FD79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Facade", "FXA.DPSE.Service.PaymentInstruction.Facade\FXA.DPSE.Service.PaymentInstruction.Facade.csproj", "{E5424522-3BCD-4922-B79C-47ECA3A94B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentInstruction", "PaymentInstruction", "{0235FD03-ABAF-4E5D-89B6-4800EC719449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{346DB2BE-720C-4D0A-B383-9036B96F9A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit", "FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit\FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit.csproj", "{70DDF500-F4A1-4127-9092-106A60780FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit", "FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit\FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit.csproj", "{C1D88143-1239-4BD6-824E-9229165391C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentInstruction.Test.Unit", "FXA.DPSE.Service.PaymentInstruction.Test.Unit\FXA.DPSE.Service.PaymentInstruction.Test.Unit.csproj", "{13C8722E-F6FC-4EB1-8275-CA72AC463866}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local:8080/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName1 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName2 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName3 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName4 = FXA.DPSE.DB.PaymentInstruction\\FXA.DPSE.DB.PaymentInstruction.sqlproj
+		SccProjectTopLevelParentUniqueName4 = PaymentInstructionService.sln
+		SccProjectName4 = FXA.DPSE.DB.PaymentInstruction
+		SccLocalPath4 = FXA.DPSE.DB.PaymentInstruction
+		SccProjectUniqueName5 = FXA.DPSE.Service.PaymentInstruction.DataAccess\\FXA.DPSE.Service.PaymentInstruction.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName5 = PaymentInstructionService.sln
+		SccProjectName5 = FXA.DPSE.Service.PaymentInstruction.DataAccess
+		SccLocalPath5 = FXA.DPSE.Service.PaymentInstruction.DataAccess
+		SccProjectUniqueName6 = FXA.DPSE.Service.PaymentInstruction.Business\\FXA.DPSE.Service.PaymentInstruction.Business.csproj
+		SccProjectTopLevelParentUniqueName6 = PaymentInstructionService.sln
+		SccProjectName6 = FXA.DPSE.Service.PaymentInstruction.Business
+		SccLocalPath6 = FXA.DPSE.Service.PaymentInstruction.Business
+		SccProjectUniqueName7 = FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint\\FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName7 = PaymentInstructionService.sln
+		SccProjectName7 = FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint
+		SccLocalPath7 = FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint
+		SccProjectUniqueName8 = FXA.DPSE.Service.PaymentInstruction\\FXA.DPSE.Service.PaymentInstruction.csproj
+		SccProjectTopLevelParentUniqueName8 = PaymentInstructionService.sln
+		SccProjectName8 = FXA.DPSE.Service.PaymentInstruction
+		SccLocalPath8 = FXA.DPSE.Service.PaymentInstruction
+		SccProjectUniqueName9 = FXA.DPSE.Service.PaymentInstruction.Common\\FXA.DPSE.Service.PaymentInstruction.Common.csproj
+		SccProjectTopLevelParentUniqueName9 = PaymentInstructionService.sln
+		SccProjectName9 = FXA.DPSE.Service.PaymentInstruction.Common
+		SccLocalPath9 = FXA.DPSE.Service.PaymentInstruction.Common
+		SccProjectUniqueName10 = FXA.DPSE.Service.PaymentInstruction.Business.Entities\\FXA.DPSE.Service.PaymentInstruction.Business.Entities.csproj
+		SccProjectTopLevelParentUniqueName10 = PaymentInstructionService.sln
+		SccProjectName10 = FXA.DPSE.Service.PaymentInstruction.Business.Entities
+		SccLocalPath10 = FXA.DPSE.Service.PaymentInstruction.Business.Entities
+		SccProjectUniqueName11 = FXA.DPSE.Service.PaymentInstruction.Facade\\FXA.DPSE.Service.PaymentInstruction.Facade.csproj
+		SccProjectTopLevelParentUniqueName11 = PaymentInstructionService.sln
+		SccProjectName11 = FXA.DPSE.Service.PaymentInstruction.Facade
+		SccLocalPath11 = FXA.DPSE.Service.PaymentInstruction.Facade
+		SccProjectUniqueName12 = FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit\\FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName12 = PaymentInstructionService.sln
+		SccProjectName12 = FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit
+		SccLocalPath12 = FXA.DPSE.Service.PaymentInstruction.Business.Test.Unit
+		SccProjectUniqueName13 = FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit\\FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName13 = PaymentInstructionService.sln
+		SccProjectName13 = FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit
+		SccLocalPath13 = FXA.DPSE.Service.PaymentInstruction.Facade.Test.Unit
+		SccProjectUniqueName14 = FXA.DPSE.Service.PaymentInstruction.Test.Unit\\FXA.DPSE.Service.PaymentInstruction.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName14 = PaymentInstructionService.sln
+		SccProjectName14 = FXA.DPSE.Service.PaymentInstruction.Test.Unit
+		SccLocalPath14 = FXA.DPSE.Service.PaymentInstruction.Test.Unit
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55BF1F6-A471-4807-8C70-4C7975431074}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{74E80C7A-3A0E-4601-A259-00227DF61A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E80C7A-3A0E-4601-A259-00227DF61A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E80C7A-3A0E-4601-A259-00227DF61A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E80C7A-3A0E-4601-A259-00227DF61A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1648F6-C19C-4C13-A969-4DF9672C6A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1648F6-C19C-4C13-A969-4DF9672C6A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1648F6-C19C-4C13-A969-4DF9672C6A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1648F6-C19C-4C13-A969-4DF9672C6A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AFF430-F9DB-4564-8892-36BC54D0EC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AFF430-F9DB-4564-8892-36BC54D0EC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AFF430-F9DB-4564-8892-36BC54D0EC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AFF430-F9DB-4564-8892-36BC54D0EC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A01500-D630-4550-A620-99BE80E3F668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A01500-D630-4550-A620-99BE80E3F668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A01500-D630-4550-A620-99BE80E3F668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A01500-D630-4550-A620-99BE80E3F668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D292D5-144D-4304-A4A8-57B6A8111004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D292D5-144D-4304-A4A8-57B6A8111004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D292D5-144D-4304-A4A8-57B6A8111004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D292D5-144D-4304-A4A8-57B6A8111004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D46F4929-D495-4D54-B34C-647E7899FD79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46F4929-D495-4D54-B34C-647E7899FD79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46F4929-D495-4D54-B34C-647E7899FD79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46F4929-D495-4D54-B34C-647E7899FD79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5424522-3BCD-4922-B79C-47ECA3A94B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5424522-3BCD-4922-B79C-47ECA3A94B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5424522-3BCD-4922-B79C-47ECA3A94B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5424522-3BCD-4922-B79C-47ECA3A94B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DDF500-F4A1-4127-9092-106A60780FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DDF500-F4A1-4127-9092-106A60780FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DDF500-F4A1-4127-9092-106A60780FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DDF500-F4A1-4127-9092-106A60780FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D88143-1239-4BD6-824E-9229165391C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D88143-1239-4BD6-824E-9229165391C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D88143-1239-4BD6-824E-9229165391C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D88143-1239-4BD6-824E-9229165391C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C8722E-F6FC-4EB1-8275-CA72AC463866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C8722E-F6FC-4EB1-8275-CA72AC463866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C8722E-F6FC-4EB1-8275-CA72AC463866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C8722E-F6FC-4EB1-8275-CA72AC463866}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E55BF1F6-A471-4807-8C70-4C7975431074} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{74E80C7A-3A0E-4601-A259-00227DF61A32} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{4F1648F6-C19C-4C13-A969-4DF9672C6A2D} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{C9AFF430-F9DB-4564-8892-36BC54D0EC88} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{D3A01500-D630-4550-A620-99BE80E3F668} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{06D292D5-144D-4304-A4A8-57B6A8111004} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{D46F4929-D495-4D54-B34C-647E7899FD79} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{E5424522-3BCD-4922-B79C-47ECA3A94B50} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{346DB2BE-720C-4D0A-B383-9036B96F9A6C} = {0235FD03-ABAF-4E5D-89B6-4800EC719449}
+		{70DDF500-F4A1-4127-9092-106A60780FAE} = {346DB2BE-720C-4D0A-B383-9036B96F9A6C}
+		{C1D88143-1239-4BD6-824E-9229165391C0} = {346DB2BE-720C-4D0A-B383-9036B96F9A6C}
+		{13C8722E-F6FC-4EB1-8275-CA72AC463866} = {346DB2BE-720C-4D0A-B383-9036B96F9A6C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSET.Framework.Service.Infrastructure</RootNamespace>
+    <AssemblyName>FXA.DPSET.Framework.Service.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Errors\ErrorBehavior.cs" />
+    <Compile Include="Attributes\Errors\ErrorBehaviorBase.cs" />
+    <Compile Include="Attributes\Errors\ErrorHandler.cs" />
+    <Compile Include="Attributes\Ping\PingEndpointBehaviorExtensionElement.cs" />
+    <Compile Include="Attributes\Ping\PingEndpointBehavior.cs" />
+    <Compile Include="Attributes\Ping\PingInvoker.cs" />
+    <Compile Include="Attributes\Ping\PingOperationBehavior.cs" />
+    <Compile Include="Attributes\ServiceBehaviorBase.cs" />
+    <Compile Include="Attributes\Validators\Implementations\ErrorMessageGenerator.cs" />
+    <Compile Include="Attributes\Validators\Core\IErrorMessageGenerator.cs" />
+    <Compile Include="Attributes\Validators\Implementations\NullCheckObjectValidator.cs" />
+    <Compile Include="Attributes\Validators\Implementations\ValidatableObjectValidator.cs" />
+    <Compile Include="Attributes\Validators\ValidateDataAnnotationsServiceBehavior.cs" />
+    <Compile Include="Attributes\Validators\Implementations\DataAnnotationsObjectValidator.cs" />
+    <Compile Include="Attributes\Validators\Core\IObjectValidator.cs" />
+    <Compile Include="Attributes\Validators\ValidateDataAnnotationsServiceBehaviorExtensionElement.cs" />
+    <Compile Include="Exceptions\ErrorContexts.cs" />
+    <Compile Include="Exceptions\ErrorLogEvent.cs" />
+    <Compile Include="Exceptions\ProcessingException.cs" />
+    <Compile Include="Model\Response.cs" />
+    <Compile Include="Model\ResponseStatusCode.cs" />
+    <Compile Include="Model\ResponseStatusCodeAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Attributes\Validators\Implementations\ValidatingParameterInspector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[Payloads]
+(
+	[Id] BIGINT NOT NULL IDENTITY(1,1), 
+    [TransactionId] BIGINT NOT NULL, 
+    [ChannelType] NVARCHAR(50) NOT NULL, 
+    [DateTimeCreated] DATETIME2(7) NOT NULL, 
+    [RelativePath] NVARCHAR(1000) NOT NULL, 
+    [LockedBy] UNIQUEIDENTIFIER NULL, 
+    [Locked] BIT NOT NULL, 
+    [DateTimeLocked] DATETIME2(7) NULL,
+	[Transported] BIT NOT NULL, 
+    [DateTimeTransported] DATETIME2(7) NULL,
+	CONSTRAINT [PK_Payloads] PRIMARY KEY CLUSTERED 
+	(
+		[Id] ASC
+	)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]

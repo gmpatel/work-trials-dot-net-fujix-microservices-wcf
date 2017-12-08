@@ -1,0 +1,4 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.DipsTransport.Sftp\bin\Debug\FXA.DPSE.Framework.Service.DipsTransport.Sftp.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.DipsTransport.Sftp\bin\Debug\FXA.DPSE.Framework.Service.DipsTransport.Sftp.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.DipsTransport.Sftp\obj\Debug\FXA.DPSE.Framework.Service.DipsTransport.Sftp.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.DipsTransport.Sftp\obj\Debug\FXA.DPSE.Framework.Service.DipsTransport.Sftp.pdb

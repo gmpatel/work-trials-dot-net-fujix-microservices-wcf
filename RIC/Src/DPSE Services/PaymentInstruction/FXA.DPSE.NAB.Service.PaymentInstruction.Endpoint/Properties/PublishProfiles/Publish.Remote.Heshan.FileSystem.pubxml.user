@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\NRYE724-F4GNF12\NAB RIC Services\RemoteRelease\PaymentInstruction</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>10/26/2015 09:13:57</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Wcf.dll">
+      <publishTime>10/26/2015 09:13:57</publishTime>
+    </File>
+    <File Include="bin/crypto.dll">
+      <publishTime>10/26/2015 09:07:04</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/26/2015 09:14:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/26/2015 09:14:09</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Common.dll">
+      <publishTime>10/26/2015 11:27:57</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Service.dll">
+      <publishTime>10/26/2015 11:28:01</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.NAB.Service.PaymentInstruction.Endpoint.dll">
+      <publishTime>10/26/2015 11:28:07</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DTO.dll">
+      <publishTime>10/26/2015 11:28:00</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.Business.dll">
+      <publishTime>10/26/2015 11:28:03</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.Business.Entities.dll">
+      <publishTime>10/26/2015 11:28:02</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.Common.dll">
+      <publishTime>10/26/2015 11:28:02</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.DataAccess.dll">
+      <publishTime>10/26/2015 11:27:57</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.dll">
+      <publishTime>10/26/2015 11:28:04</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.PaymentInstruction.Facade.dll">
+      <publishTime>10/26/2015 11:28:03</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/26/2015 09:15:01</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/09/2013 11:04:28</publishTime>
+    </File>
+    <File Include="DpseSettings.StyleCop">
+      <publishTime>10/15/2015 07:50:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/15/2015 07:50:34</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/26/2015 09:13:55</publishTime>
+    </File>
+    <File Include="PaymentInstructionService.svc">
+      <publishTime>10/15/2015 07:54:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/26/2015 11:28:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

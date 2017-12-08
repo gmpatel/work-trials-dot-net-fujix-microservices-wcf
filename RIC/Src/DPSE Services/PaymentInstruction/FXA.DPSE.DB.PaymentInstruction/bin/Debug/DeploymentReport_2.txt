@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[AccountName].[IX_AccountId] (Index)
+       [dbo].[PaymentInstruction].[IX_PaymentInstruction_AccountId] (Index)
+       [dbo].[PaymentInstruction].[IX_PaymentInstruction_ClientSessionId] (Index)
+       [dbo].[Voucher].[IX_Voucher_PaymentInstructionId] (Index)
+       [dbo].[DF_PaymentInstruction_CreateDateTime] (Default Constraint)
+       [dbo].[DF_PaymentInstruction_Status] (Default Constraint)
+       [dbo].[FK_AccountName_Account] (Foreign Key)
+       [dbo].[FK_PaymentInstruction_Account] (Foreign Key)
+       [dbo].[FK_PaymentInstruction_ClientSession] (Foreign Key)
+       [dbo].[FK_Voucher_PaymentInstruction] (Foreign Key)
+       [dbo].[FK_VoucherImage_Voucher] (Foreign Key)
+
+** Supporting actions

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBAuditModelStoreContainer" CdmEntityContainer="AuditDb">
+    <EntitySetMapping Name="Audits">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.AuditModel.Audit">
+        <MappingFragment StoreEntitySet="Audit">
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="OperatorName" ColumnName="OperatorName" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+          <ScalarProperty Name="Resource" ColumnName="Resource" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AuditDateTime" ColumnName="AuditDateTime" />
+          <ScalarProperty Name="DocumentReferenceNumber" ColumnName="DocumentReferenceNumber" />
+          <ScalarProperty Name="ExternalCorrelationIdentifier" ColumnName="ExternalCorrelationIdentifier" />
+          <ScalarProperty Name="TrackingIdentifier" ColumnName="TrackingIdentifier" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

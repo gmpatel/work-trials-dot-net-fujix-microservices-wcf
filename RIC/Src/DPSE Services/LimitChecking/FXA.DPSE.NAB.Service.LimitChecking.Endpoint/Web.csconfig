@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+ <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+  <serviceConfig>
+    <TransactionLimit Amount='@Model.GetValue("TransactionLimit")'  xdt:Transform="SetAttributes(Amount)" />
+  </serviceConfig>
+</configuration>

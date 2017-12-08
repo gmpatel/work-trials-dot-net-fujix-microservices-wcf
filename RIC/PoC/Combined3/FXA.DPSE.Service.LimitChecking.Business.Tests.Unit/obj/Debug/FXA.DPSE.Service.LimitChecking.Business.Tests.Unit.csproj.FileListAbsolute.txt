@@ -1,0 +1,10 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.csprojResolveAssemblyReference.cache
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.csprojResolveAssemblyReference.cache

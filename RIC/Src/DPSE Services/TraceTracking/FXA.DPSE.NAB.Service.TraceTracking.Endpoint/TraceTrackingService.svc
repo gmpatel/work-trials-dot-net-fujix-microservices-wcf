@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="FXA.DPSE.Service.TraceTracking.ITraceTrackingService, FXA.DPSE.Service.TraceTracking" 
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf" 
+%> 

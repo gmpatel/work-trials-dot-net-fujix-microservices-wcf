@@ -1,0 +1,4 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DuplicateIdentification\FXA.DPSE.Service.DuplicateIdentification.Common\bin\Release\FXA.DPSE.Service.DuplicateIdentification.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DuplicateIdentification\FXA.DPSE.Service.DuplicateIdentification.Common\bin\Release\FXA.DPSE.Service.DuplicateIdentification.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DuplicateIdentification\FXA.DPSE.Service.DuplicateIdentification.Common\obj\Release\FXA.DPSE.Service.DuplicateIdentification.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DuplicateIdentification\FXA.DPSE.Service.DuplicateIdentification.Common\obj\Release\FXA.DPSE.Service.DuplicateIdentification.Common.pdb

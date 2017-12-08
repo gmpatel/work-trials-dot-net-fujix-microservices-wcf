@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\bin\Release\FXA.DPSE.Service.Logging.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\bin\Release\FXA.DPSE.Service.Logging.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\obj\Release\FXA.DPSE.Service.Logging.Common.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\obj\Release\FXA.DPSE.Service.Logging.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\obj\Release\FXA.DPSE.Service.Logging.Common.pdb

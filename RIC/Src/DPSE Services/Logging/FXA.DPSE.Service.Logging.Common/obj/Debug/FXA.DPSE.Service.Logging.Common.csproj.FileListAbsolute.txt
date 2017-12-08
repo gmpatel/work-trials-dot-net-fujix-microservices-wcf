@@ -1,0 +1,4 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\bin\Debug\FXA.DPSE.Service.Logging.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\bin\Debug\FXA.DPSE.Service.Logging.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\obj\Debug\FXA.DPSE.Service.Logging.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Logging\FXA.DPSE.Service.Logging.Common\obj\Debug\FXA.DPSE.Service.Logging.Common.pdb

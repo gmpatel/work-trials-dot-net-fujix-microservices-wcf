@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.AuditModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Audit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TrackingIdentifier" Type="nvarchar" MaxLength="20" />
+    <Property Name="ExternalCorrelationIdentifier" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocumentReferenceNumber" Type="nvarchar" MaxLength="12" />
+    <Property Name="AuditDateTime" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Resource" Type="nvarchar(max)" />
+    <Property Name="ChannelType" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="50" />
+    <Property Name="OperatorName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FXADPSEDBAuditModelStoreContainer">
+    <EntitySet Name="Audit" EntityType="Self.Audit" Schema="core" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

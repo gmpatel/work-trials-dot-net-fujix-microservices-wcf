@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.Common", "FXA.DPSE.Service.ShadowPost.Common\FXA.DPSE.Service.ShadowPost.Common.csproj", "{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.ShadowPost.Endpoint", "FXA.DPSE.NAB.Service.ShadowPost.Endpoint\FXA.DPSE.NAB.Service.ShadowPost.Endpoint.csproj", "{91EB3028-C997-44A5-A1E1-428E20EE4D5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost", "FXA.DPSE.Service.ShadowPost\FXA.DPSE.Service.ShadowPost.csproj", "{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ShadowPost", "ShadowPost", "{56F034B5-5940-4FE4-9935-656FDE62E63E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C951C62D-127E-41A7-A702-14DBECFC6022}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FXA.DPSE.DB.ShadowPost", "FXA.DPSE.DB.ShadowPost\FXA.DPSE.DB.ShadowPost.sqlproj", "{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.Business", "FXA.DPSE.Service.ShadowPost.Business\FXA.DPSE.Service.ShadowPost.Business.csproj", "{E298B08F-7E7D-4503-92D1-B3A10687211B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.DataAccess", "FXA.DPSE.Service.ShadowPost.DataAccess\FXA.DPSE.Service.ShadowPost.DataAccess.csproj", "{25CD5186-7444-425B-B41D-49AA2BCC9F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.Facade", "FXA.DPSE.Service.ShadowPost.Facade\FXA.DPSE.Service.ShadowPost.Facade.csproj", "{82EAE657-5E1A-408F-B046-2531E2B8969A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.Business.Test.Unit", "FXA.DPSE.Service.ShadowPost.Business.Test.Unit\FXA.DPSE.Service.ShadowPost.Business.Test.Unit.csproj", "{A55EB373-9A07-48F6-8A77-660225E8EAAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F4AEE470-85CA-4D98-BDA1-D1AB0A2BFF7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.ShadowPost.Facade.Test.Unit", "FXA.DPSE.Service.ShadowPost.Facade.Test.Unit\FXA.DPSE.Service.ShadowPost.Facade.Test.Unit.csproj", "{FEB6D967-6072-44B8-8224-A68A9281D220}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName1 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName2 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName3 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName4 = FXA.DPSE.NAB.Service.ShadowPost.Endpoint\\FXA.DPSE.NAB.Service.ShadowPost.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName4 = ShadowPostService.sln
+		SccProjectName4 = FXA.DPSE.NAB.Service.ShadowPost.Endpoint
+		SccLocalPath4 = FXA.DPSE.NAB.Service.ShadowPost.Endpoint
+		SccProjectUniqueName5 = FXA.DPSE.Service.ShadowPost.Common\\FXA.DPSE.Service.ShadowPost.Common.csproj
+		SccProjectTopLevelParentUniqueName5 = ShadowPostService.sln
+		SccProjectName5 = FXA.DPSE.Service.ShadowPost.Common
+		SccLocalPath5 = FXA.DPSE.Service.ShadowPost.Common
+		SccProjectUniqueName6 = FXA.DPSE.Service.ShadowPost\\FXA.DPSE.Service.ShadowPost.csproj
+		SccProjectTopLevelParentUniqueName6 = ShadowPostService.sln
+		SccProjectName6 = FXA.DPSE.Service.ShadowPost
+		SccLocalPath6 = FXA.DPSE.Service.ShadowPost
+		SccProjectUniqueName7 = FXA.DPSE.DB.ShadowPost\\FXA.DPSE.DB.ShadowPost.sqlproj
+		SccProjectTopLevelParentUniqueName7 = ShadowPostService.sln
+		SccProjectName7 = FXA.DPSE.DB.ShadowPost
+		SccLocalPath7 = FXA.DPSE.DB.ShadowPost
+		SccProjectUniqueName8 = FXA.DPSE.Service.ShadowPost.Business\\FXA.DPSE.Service.ShadowPost.Business.csproj
+		SccProjectTopLevelParentUniqueName8 = ShadowPostService.sln
+		SccProjectName8 = FXA.DPSE.Service.ShadowPost.Business
+		SccLocalPath8 = FXA.DPSE.Service.ShadowPost.Business
+		SccProjectUniqueName9 = FXA.DPSE.Service.ShadowPost.DataAccess\\FXA.DPSE.Service.ShadowPost.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName9 = ShadowPostService.sln
+		SccProjectName9 = FXA.DPSE.Service.ShadowPost.DataAccess
+		SccLocalPath9 = FXA.DPSE.Service.ShadowPost.DataAccess
+		SccProjectUniqueName10 = FXA.DPSE.Service.ShadowPost.Facade\\FXA.DPSE.Service.ShadowPost.Facade.csproj
+		SccProjectTopLevelParentUniqueName10 = ShadowPostService.sln
+		SccProjectName10 = FXA.DPSE.Service.ShadowPost.Facade
+		SccLocalPath10 = FXA.DPSE.Service.ShadowPost.Facade
+		SccProjectUniqueName11 = FXA.DPSE.Service.ShadowPost.Business.Test.Unit\\FXA.DPSE.Service.ShadowPost.Business.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName11 = ShadowPostService.sln
+		SccProjectName11 = FXA.DPSE.Service.ShadowPost.Business.Test.Unit
+		SccLocalPath11 = FXA.DPSE.Service.ShadowPost.Business.Test.Unit
+		SccProjectUniqueName12 = FXA.DPSE.Service.ShadowPost.Facade.Test.Unit\\FXA.DPSE.Service.ShadowPost.Facade.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName12 = ShadowPostService.sln
+		SccProjectName12 = FXA.DPSE.Service.ShadowPost.Facade.Test.Unit
+		SccLocalPath12 = FXA.DPSE.Service.ShadowPost.Facade.Test.Unit
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EB3028-C997-44A5-A1E1-428E20EE4D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EB3028-C997-44A5-A1E1-428E20EE4D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EB3028-C997-44A5-A1E1-428E20EE4D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EB3028-C997-44A5-A1E1-428E20EE4D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E298B08F-7E7D-4503-92D1-B3A10687211B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E298B08F-7E7D-4503-92D1-B3A10687211B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E298B08F-7E7D-4503-92D1-B3A10687211B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E298B08F-7E7D-4503-92D1-B3A10687211B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CD5186-7444-425B-B41D-49AA2BCC9F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CD5186-7444-425B-B41D-49AA2BCC9F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CD5186-7444-425B-B41D-49AA2BCC9F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CD5186-7444-425B-B41D-49AA2BCC9F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EAE657-5E1A-408F-B046-2531E2B8969A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EAE657-5E1A-408F-B046-2531E2B8969A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EAE657-5E1A-408F-B046-2531E2B8969A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EAE657-5E1A-408F-B046-2531E2B8969A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55EB373-9A07-48F6-8A77-660225E8EAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55EB373-9A07-48F6-8A77-660225E8EAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55EB373-9A07-48F6-8A77-660225E8EAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55EB373-9A07-48F6-8A77-660225E8EAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB6D967-6072-44B8-8224-A68A9281D220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB6D967-6072-44B8-8224-A68A9281D220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB6D967-6072-44B8-8224-A68A9281D220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB6D967-6072-44B8-8224-A68A9281D220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{91EB3028-C997-44A5-A1E1-428E20EE4D5D} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{99AE0D8E-E15A-4B13-8CC6-ABEDE1AC63A6} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{8FBFF781-2FE5-43ED-8507-179BDF0A6E54} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{E298B08F-7E7D-4503-92D1-B3A10687211B} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{25CD5186-7444-425B-B41D-49AA2BCC9F63} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{82EAE657-5E1A-408F-B046-2531E2B8969A} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{A55EB373-9A07-48F6-8A77-660225E8EAAF} = {F4AEE470-85CA-4D98-BDA1-D1AB0A2BFF7B}
+		{F4AEE470-85CA-4D98-BDA1-D1AB0A2BFF7B} = {56F034B5-5940-4FE4-9935-656FDE62E63E}
+		{FEB6D967-6072-44B8-8224-A68A9281D220} = {F4AEE470-85CA-4D98-BDA1-D1AB0A2BFF7B}
+	EndGlobalSection
+EndGlobal

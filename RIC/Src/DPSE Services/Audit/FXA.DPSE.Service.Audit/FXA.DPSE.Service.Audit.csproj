@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2968EEDA-248C-4B0D-AC73-2DC738985CBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Service.Audit</RootNamespace>
+    <AssemblyName>FXA.DPSE.Service.Audit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditService.cs" />
+    <Compile Include="IAuditService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DpseSettings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9B36379C-E561-4923-97A9-1B5175C88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj">
+      <Project>{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}</Project>
+      <Name>FXA.DPSE.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.Audit.Business\FXA.DPSE.Service.Audit.Business.csproj">
+      <Project>{3c33b3df-d08b-44bd-a072-6dacf9c2e697}</Project>
+      <Name>FXA.DPSE.Service.Audit.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.Audit.Common\FXA.DPSE.Service.Audit.Common.csproj">
+      <Project>{5645719a-a562-4b43-935c-b348f9a413f0}</Project>
+      <Name>FXA.DPSE.Service.Audit.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

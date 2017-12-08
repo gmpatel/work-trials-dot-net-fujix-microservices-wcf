@@ -1,0 +1,12 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\FXA.DPSE.Framework.Service.Logging.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\FXA.DPSE.Framework.Service.Logging.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\FXA.DPSE.Framework.Common.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\Autofac.Integration.Wcf.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\log4net.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\Newtonsoft.Json.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\FXA.DPSE.Framework.Common.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\log4net.xml
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\bin\Debug\Newtonsoft.Json.xml
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\obj\Debug\FXA.DPSE.Framework.Service.Logging.csprojResolveAssemblyReference.cache
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\obj\Debug\FXA.DPSE.Framework.Service.Logging.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Service.Logging\obj\Debug\FXA.DPSE.Framework.Service.Logging.pdb

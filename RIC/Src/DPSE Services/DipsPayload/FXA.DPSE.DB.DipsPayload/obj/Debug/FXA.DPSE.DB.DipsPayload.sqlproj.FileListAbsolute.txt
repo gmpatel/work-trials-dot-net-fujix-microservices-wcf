@@ -1,0 +1,9 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\bin\Debug\FXA.DPSE.DB.DipsPayload.dacpac
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\bin\Debug\FXA.DPSE.DB.DipsPayload.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\bin\Debug\FXA.DPSE.DB.DipsPayload.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\FXA.DPSE.DB.DipsPayload.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\FXA.DPSE.DB.DipsPayload.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\Model.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\refactor.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\postdeploy.sql
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\DipsPayload\FXA.DPSE.DB.DipsPayload\obj\Debug\predeploy.sql

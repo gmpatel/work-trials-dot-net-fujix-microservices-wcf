@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EE69CAA-3AD8-4F1F-8EB8-E8E7145C80FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Service.ShadowPost.Common</RootNamespace>
+    <AssemblyName>FXA.DPSE.Service.ShadowPost.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\IShadowPostServiceConfiguration.cs" />
+    <Compile Include="Configuration\ShadowServiceConfigurationSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusCode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9b36379c-e561-4923-97a9-1b5175c88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj">
+      <Project>{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}</Project>
+      <Name>FXA.DPSE.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.ShadowPost.DataAccess\FXA.DPSE.Service.ShadowPost.DataAccess.csproj">
+      <Project>{25cd5186-7444-425b-b41d-49aa2bcc9f63}</Project>
+      <Name>FXA.DPSE.Service.ShadowPost.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

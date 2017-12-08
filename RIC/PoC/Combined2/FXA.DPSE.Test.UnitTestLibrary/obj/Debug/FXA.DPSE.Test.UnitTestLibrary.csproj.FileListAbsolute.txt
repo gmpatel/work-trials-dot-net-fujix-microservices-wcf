@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Test.UnitTestLibrary\bin\Debug\FXA.DPSE.Test.UnitTestLibrary.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Test.UnitTestLibrary\bin\Debug\FXA.DPSE.Test.UnitTestLibrary.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Test.UnitTestLibrary\obj\Debug\FXA.DPSE.Test.UnitTestLibrary.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Test.UnitTestLibrary\obj\Debug\FXA.DPSE.Test.UnitTestLibrary.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Test.UnitTestLibrary\obj\Debug\FXA.DPSE.Test.UnitTestLibrary.pdb

@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[ElectronicTraceTracking]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[ElectronicTraceTracking] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ElectronicTraceTracking] (Foreign Key)
+     Create
+       [dbo].[FK_ElectronicTraceTracking] (Foreign Key)

@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ChannelTypes] (Table)
+       [dbo].[PayloadCheques] (Table)
+       [dbo].[Payloads] (Table)
+       [dbo].[FK_Payload] (Foreign Key)
+       [dbo].[FK_ChannelType] (Foreign Key)
+
+** Supporting actions

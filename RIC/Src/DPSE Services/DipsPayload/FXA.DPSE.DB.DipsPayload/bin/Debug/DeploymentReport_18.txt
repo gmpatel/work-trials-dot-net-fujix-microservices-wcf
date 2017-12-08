@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Payloads]
+       [dbo].[PayloadDetails]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Payloads] (Table)
+       [dbo].[PayloadDetails] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Payload] (Foreign Key)
+     Create
+       [dbo].[FK_Payload] (Foreign Key)

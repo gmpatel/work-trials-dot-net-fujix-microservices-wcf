@@ -1,0 +1,8 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\bin\Debug\FXA.DPSE.Service.LimitChecking.Business.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Service.LimitChecking.Business\obj\Debug\FXA.DPSE.Service.LimitChecking.Business.pdb

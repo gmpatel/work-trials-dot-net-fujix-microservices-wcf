@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[PaymentInstruction]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[PaymentInstruction].[TransactionNarrative] on table [dbo].[PaymentInstruction] must be added, but the
+         column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work.
+         To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the
+         generation of smart-defaults as a deployment option.
+
+** User actions
+     Drop
+       [dbo].[AccountName].[IX_AccountId] (Index)
+       [dbo].[PaymentInstruction].[IX_PaymentInstruction_AccountId] (Index)
+       [dbo].[PaymentInstruction].[IX_PaymentInstruction_ClientSessionId] (Index)
+       [dbo].[Voucher].[IX_Voucher_PaymentInstructionId] (Index)
+       [dbo].[DF_PaymentInstruction_CreateDateTime] (Default Constraint)
+       [dbo].[DF_PaymentInstruction_Status] (Default Constraint)
+       [dbo].[FK_PaymentInstruction_Account] (Foreign Key)
+       [dbo].[FK_PaymentInstruction_ClientSession] (Foreign Key)
+       [dbo].[FK_Voucher_PaymentInstruction] (Foreign Key)
+       [dbo].[FK_AccountName_Account] (Foreign Key)
+       [dbo].[FK_VoucherImage_Voucher] (Foreign Key)
+     Table rebuild
+       [dbo].[PaymentInstruction] (Table)
+
+** Supporting actions
+
+The column [dbo].[PaymentInstruction].[TransactionNarrative] on table [dbo].[PaymentInstruction] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

@@ -1,0 +1,39 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Audit]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Audit].[AuditDateTime] is being dropped, data loss could occur.
+       The column [dbo].[Audit].[CreatedDateTime] is being dropped, data loss could occur.
+       The column [dbo].[Audit].[DocumentReferenceNumber] is being dropped, data loss could occur.
+       The column [dbo].[Audit].[ExternalCorrelationIdentifier] is being dropped, data loss could occur.
+       The column [dbo].[Audit].[OperatorName] is being dropped, data loss could occur.
+       The column [dbo].[Audit].[SessionId] on table [dbo].[Audit] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The type for column Id in table [dbo].[Audit] is currently  BIGINT IDENTITY (1, 1) NOT NULL but is being changed to  INT
+         IDENTITY (1, 1) NOT NULL. Data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[DF_Audit_Timestamp] (Default Constraint)
+     Table rebuild
+       [dbo].[Audit] (Table)
+
+** Supporting actions
+
+The column [dbo].[Audit].[AuditDateTime] is being dropped, data loss could occur.
+The column [dbo].[Audit].[CreatedDateTime] is being dropped, data loss could occur.
+The column [dbo].[Audit].[DocumentReferenceNumber] is being dropped, data loss could occur.
+The column [dbo].[Audit].[ExternalCorrelationIdentifier] is being dropped, data loss could occur.
+The column [dbo].[Audit].[OperatorName] is being dropped, data loss could occur.
+The column [dbo].[Audit].[SessionId] on table [dbo].[Audit] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column Id in table [dbo].[Audit] is currently  BIGINT IDENTITY (1, 1) NOT NULL but is being changed to  INT IDENTITY (1, 1) NOT NULL. Data loss could occur.
+The column OperationName on table [dbo].[Audit] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column Resource on table [dbo].[Audit] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column TrackingIdentifier on table [dbo].[Audit] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

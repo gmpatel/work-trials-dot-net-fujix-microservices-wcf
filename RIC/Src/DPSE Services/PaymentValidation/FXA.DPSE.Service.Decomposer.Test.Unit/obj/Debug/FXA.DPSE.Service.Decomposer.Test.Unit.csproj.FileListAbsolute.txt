@@ -1,0 +1,1 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.Decomposer.Test.Unit\obj\Debug\FXA.DPSE.Service.Decomposer.Test.Unit.csprojResolveAssemblyReference.cache

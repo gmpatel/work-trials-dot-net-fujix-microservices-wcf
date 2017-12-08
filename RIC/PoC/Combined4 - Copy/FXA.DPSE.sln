@@ -1,0 +1,399 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A23B6658-A36B-435D-B3FD-00975965D975}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{38CB3995-7626-4025-844F-5D389EC52DDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{2D0242C3-1F8E-432A-B2C9-7E60655136DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scheduler", "Scheduler", "{C28F91DA-47F7-4F33-A06F-CBE9A079E27C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DD39629E-6B01-4FB2-A574-6A220862D2E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Common", "FXA.DPSE.Common\FXA.DPSE.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.Tests.Unit", "FXA.DPSE.Framework.Service.Tests.Unit\FXA.DPSE.Framework.Service.Tests.Unit.csproj", "{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Repository.Core", "FXA.Framework.Repository.Core\FXA.Framework.Repository.Core.csproj", "{6E682A14-C872-4813-B620-76E108DEA683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Repository.Core.EF", "FXA.Framework.Repository.Core.EF\FXA.Framework.Repository.Core.EF.csproj", "{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Scheduler", "FXA.Framework.Scheduler\FXA.Framework.Scheduler.csproj", "{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DpseMessageDispatchers", "DpseMessageDispatchers", "{D3BF73C3-B448-445C-9D87-82EB535E21EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit", "Audit", "{522D31E9-D066-49A5-9D51-62B8D676AEF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DipsTransport", "DipsTransport", "{17C6EC38-7066-4502-946F-D9556BABBC38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthMonitor", "HealthMonitor", "{4B8CB4FE-0EA7-4549-A96F-633CAAC0A132}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LimitChecking", "LimitChecking", "{E5928C9B-FA7D-46AC-BB7E-E4C64746973E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{68D98D40-FF9A-4786-BA7C-82172653C4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.MessageDispatcher.DipsTransport", "FXA.DPSE.MessageDispatcher.DipsTransport\FXA.DPSE.MessageDispatcher.DipsTransport.csproj", "{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.MessageDispatcher.HealthMonitor", "FXA.DPSE.MessageDispatcher.HealthMonitor\FXA.DPSE.MessageDispatcher.HealthMonitor.csproj", "{99DCCCC7-8CEE-4563-BB41-B50550169AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Scheduler.Host", "FXA.Framework.Scheduler.Host\FXA.Framework.Scheduler.Host.csproj", "{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.DipsTransport", "FXA.DPSE.Framework.Service.DipsTransport\FXA.DPSE.Framework.Service.DipsTransport.csproj", "{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.DipsTransport.Business", "FXA.DPSE.Framework.Service.DipsTransport.Business\FXA.DPSE.Framework.Service.DipsTransport.Business.csproj", "{CD98499B-18C1-416D-AF42-ACC898AA0901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.DipsTransport.Endpoint", "FXA.DPSE.NAB.Service.DipsTransport.Endpoint\FXA.DPSE.NAB.Service.DipsTransport.Endpoint.csproj", "{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.DTO", "FXA.DPSE.NAB.Service.DTO\FXA.DPSE.NAB.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.Audit", "FXA.DPSE.Framework.Service.Audit\FXA.DPSE.Framework.Service.Audit.csproj", "{2968EEDA-248C-4B0D-AC73-2DC738985CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.Audit.Business", "FXA.DPSE.Framework.Service.Audit.Business\FXA.DPSE.Framework.Service.Audit.Business.csproj", "{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.Audit.Endpoint", "FXA.DPSE.NAB.Service.Audit.Endpoint\FXA.DPSE.NAB.Service.Audit.Endpoint.csproj", "{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service.HealthMonitor", "FAX.DPSE.Framework.Service.HealthMonitor\FXA.DPSE.Framework.Service.HealthMonitor.csproj", "{C2160AC0-71F6-4EBD-8F5A-160B0A974354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.HealthMonitor.Endpoint", "FXA.DPSE.NAB.Service.HealthMonitor.Endpoint\FXA.DPSE.NAB.Service.HealthMonitor.Endpoint.csproj", "{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking", "FXA.DPSE.Framework.Service.LimitChecking\FXA.DPSE.Service.LimitChecking.csproj", "{0E3FB9EB-2044-436D-835F-9EBFCD466679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking.Business", "FXA.DPSE.Service.LimitChecking.Business\FXA.DPSE.Service.LimitChecking.Business.csproj", "{793F9D0B-1466-492E-AD37-0832556A87B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.LimitChecking.Endpoint", "FXA.DPSE.NAB.Service.LimitChecking.Endpoint\FXA.DPSE.NAB.Service.LimitChecking.Endpoint.csproj", "{C56CBB14-3C5A-437F-8288-3BF3144234F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking.Business.Tests.Unit", "FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.csproj", "{16549347-E11D-48C7-8542-7971699FF59E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging", "FXA.DPSE.Service.Logging\FXA.DPSE.Service.Logging.csproj", "{64E5EC26-312C-4C74-9AAE-EB792F55E79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging.Business", "FXA.DPSE.Service.Logging.Business\FXA.DPSE.Service.Logging.Business.csproj", "{C961A7C9-C093-42D4-BA08-76C52E39434F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging.Business.Tests.Unit", "FXA.DPSE.Service.Logging.Business.Tests.Unit\FXA.DPSE.Service.Logging.Business.Tests.Unit.csproj", "{DC31D820-D3C7-43DA-8606-EF8DC095AD66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.Logging.Endpoint", "FXA.DPSE.NAB.Service.Logging.Endpoint\FXA.DPSE.NAB.Service.Logging.Endpoint.csproj", "{175A106E-5FB3-43B9-8410-77A49E230ADF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 27
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local:8080/tfs/bpsprojects
+		SccProjectUniqueName0 = FXA.DPSE.Common\\FXA.DPSE.Common.csproj
+		SccProjectTopLevelParentUniqueName0 = FXA.DPSE.sln
+		SccProjectName0 = FXA.DPSE.Common
+		SccLocalPath0 = FXA.DPSE.Common
+		SccProjectUniqueName1 = FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectTopLevelParentUniqueName1 = FXA.DPSE.sln
+		SccProjectName1 = FXA.DPSE.Framework.Service
+		SccLocalPath1 = FXA.DPSE.Framework.Service
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = FXA.DPSE.Framework.Service.Tests.Unit\\FXA.DPSE.Framework.Service.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName3 = FXA.DPSE.sln
+		SccProjectName3 = FXA.DPSE.Framework.Service.Tests.Unit
+		SccLocalPath3 = FXA.DPSE.Framework.Service.Tests.Unit
+		SccProjectUniqueName4 = FXA.Framework.Repository.Core\\FXA.Framework.Repository.Core.csproj
+		SccProjectTopLevelParentUniqueName4 = FXA.DPSE.sln
+		SccProjectName4 = FXA.Framework.Repository.Core
+		SccLocalPath4 = FXA.Framework.Repository.Core
+		SccProjectUniqueName5 = FXA.Framework.Repository.Core.EF\\FXA.Framework.Repository.Core.EF.csproj
+		SccProjectTopLevelParentUniqueName5 = FXA.DPSE.sln
+		SccProjectName5 = FXA.Framework.Repository.Core.EF
+		SccLocalPath5 = FXA.Framework.Repository.Core.EF
+		SccProjectUniqueName6 = FXA.Framework.Scheduler\\FXA.Framework.Scheduler.csproj
+		SccProjectTopLevelParentUniqueName6 = FXA.DPSE.sln
+		SccProjectName6 = FXA.Framework.Scheduler
+		SccLocalPath6 = FXA.Framework.Scheduler
+		SccProjectUniqueName7 = FXA.DPSE.MessageDispatcher.DipsTransport\\FXA.DPSE.MessageDispatcher.DipsTransport.csproj
+		SccProjectTopLevelParentUniqueName7 = FXA.DPSE.sln
+		SccProjectName7 = FXA.DPSE.MessageDispatcher.DipsTransport
+		SccLocalPath7 = FXA.DPSE.MessageDispatcher.DipsTransport
+		SccProjectUniqueName8 = FXA.DPSE.MessageDispatcher.HealthMonitor\\FXA.DPSE.MessageDispatcher.HealthMonitor.csproj
+		SccProjectTopLevelParentUniqueName8 = FXA.DPSE.sln
+		SccProjectName8 = FXA.DPSE.MessageDispatcher.HealthMonitor
+		SccLocalPath8 = FXA.DPSE.MessageDispatcher.HealthMonitor
+		SccProjectUniqueName9 = FXA.Framework.Scheduler.Host\\FXA.Framework.Scheduler.Host.csproj
+		SccProjectTopLevelParentUniqueName9 = FXA.DPSE.sln
+		SccProjectName9 = FXA.Framework.Scheduler.Host
+		SccLocalPath9 = FXA.Framework.Scheduler.Host
+		SccProjectUniqueName10 = FXA.DPSE.Framework.Service.DipsTransport\\FXA.DPSE.Framework.Service.DipsTransport.csproj
+		SccProjectTopLevelParentUniqueName10 = FXA.DPSE.sln
+		SccProjectName10 = FXA.DPSE.Framework.Service.DipsTransport
+		SccLocalPath10 = FXA.DPSE.Framework.Service.DipsTransport
+		SccProjectUniqueName11 = FXA.DPSE.Framework.Service.DipsTransport.Business\\FXA.DPSE.Framework.Service.DipsTransport.Business.csproj
+		SccProjectTopLevelParentUniqueName11 = FXA.DPSE.sln
+		SccProjectName11 = FXA.DPSE.Framework.Service.DipsTransport.Business
+		SccLocalPath11 = FXA.DPSE.Framework.Service.DipsTransport.Business
+		SccProjectUniqueName12 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint\\FXA.DPSE.NAB.Service.DipsTransport.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName12 = FXA.DPSE.sln
+		SccProjectName12 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint
+		SccLocalPath12 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint
+		SccProjectUniqueName13 = FXA.DPSE.NAB.Service.DTO\\FXA.DPSE.NAB.Service.DTO.csproj
+		SccProjectTopLevelParentUniqueName13 = FXA.DPSE.sln
+		SccProjectName13 = FXA.DPSE.NAB.Service.DTO
+		SccLocalPath13 = FXA.DPSE.NAB.Service.DTO
+		SccProjectUniqueName14 = FXA.DPSE.Framework.Service.Audit\\FXA.DPSE.Framework.Service.Audit.csproj
+		SccProjectTopLevelParentUniqueName14 = FXA.DPSE.sln
+		SccProjectName14 = FXA.DPSE.Framework.Service.Audit
+		SccLocalPath14 = FXA.DPSE.Framework.Service.Audit
+		SccProjectUniqueName15 = FXA.DPSE.Framework.Service.Audit.Business\\FXA.DPSE.Framework.Service.Audit.Business.csproj
+		SccProjectTopLevelParentUniqueName15 = FXA.DPSE.sln
+		SccProjectName15 = FXA.DPSE.Framework.Service.Audit.Business
+		SccLocalPath15 = FXA.DPSE.Framework.Service.Audit.Business
+		SccProjectUniqueName16 = FXA.DPSE.NAB.Service.Audit.Endpoint\\FXA.DPSE.NAB.Service.Audit.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName16 = FXA.DPSE.sln
+		SccProjectName16 = FXA.DPSE.NAB.Service.Audit.Endpoint
+		SccLocalPath16 = FXA.DPSE.NAB.Service.Audit.Endpoint
+		SccProjectUniqueName17 = FAX.DPSE.Framework.Service.HealthMonitor\\FXA.DPSE.Framework.Service.HealthMonitor.csproj
+		SccProjectTopLevelParentUniqueName17 = FXA.DPSE.sln
+		SccProjectName17 = FAX.DPSE.Framework.Service.HealthMonitor
+		SccLocalPath17 = FAX.DPSE.Framework.Service.HealthMonitor
+		SccProjectUniqueName18 = FXA.DPSE.NAB.Service.HealthMonitor.Endpoint\\FXA.DPSE.NAB.Service.HealthMonitor.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName18 = FXA.DPSE.sln
+		SccProjectName18 = FXA.DPSE.NAB.Service.HealthMonitor.Endpoint
+		SccLocalPath18 = FXA.DPSE.NAB.Service.HealthMonitor.Endpoint
+		SccProjectUniqueName19 = FXA.DPSE.Framework.Service.LimitChecking\\FXA.DPSE.Service.LimitChecking.csproj
+		SccProjectTopLevelParentUniqueName19 = FXA.DPSE.sln
+		SccProjectName19 = FXA.DPSE.Framework.Service.LimitChecking
+		SccLocalPath19 = FXA.DPSE.Framework.Service.LimitChecking
+		SccProjectUniqueName20 = FXA.DPSE.Service.LimitChecking.Business\\FXA.DPSE.Service.LimitChecking.Business.csproj
+		SccProjectTopLevelParentUniqueName20 = FXA.DPSE.sln
+		SccProjectName20 = FXA.DPSE.Service.LimitChecking.Business
+		SccLocalPath20 = FXA.DPSE.Service.LimitChecking.Business
+		SccProjectUniqueName21 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint\\FXA.DPSE.NAB.Service.LimitChecking.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName21 = FXA.DPSE.sln
+		SccProjectName21 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint
+		SccLocalPath21 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint
+		SccProjectUniqueName22 = FXA.DPSE.Service.LimitChecking.Business.Tests.Unit\\FXA.DPSE.Service.LimitChecking.Business.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName22 = FXA.DPSE.sln
+		SccProjectName22 = FXA.DPSE.Service.LimitChecking.Business.Tests.Unit
+		SccLocalPath22 = FXA.DPSE.Service.LimitChecking.Business.Tests.Unit
+		SccProjectUniqueName23 = FXA.DPSE.Service.Logging\\FXA.DPSE.Service.Logging.csproj
+		SccProjectTopLevelParentUniqueName23 = FXA.DPSE.sln
+		SccProjectName23 = FXA.DPSE.Service.Logging
+		SccLocalPath23 = FXA.DPSE.Service.Logging
+		SccProjectUniqueName24 = FXA.DPSE.Service.Logging.Business\\FXA.DPSE.Service.Logging.Business.csproj
+		SccProjectTopLevelParentUniqueName24 = FXA.DPSE.sln
+		SccProjectName24 = FXA.DPSE.Service.Logging.Business
+		SccLocalPath24 = FXA.DPSE.Service.Logging.Business
+		SccProjectUniqueName25 = FXA.DPSE.Service.Logging.Business.Tests.Unit\\FXA.DPSE.Service.Logging.Business.Tests.Unit.csproj
+		SccProjectTopLevelParentUniqueName25 = FXA.DPSE.sln
+		SccProjectName25 = FXA.DPSE.Service.Logging.Business.Tests.Unit
+		SccLocalPath25 = FXA.DPSE.Service.Logging.Business.Tests.Unit
+		SccProjectUniqueName26 = FXA.DPSE.NAB.Service.Logging.Endpoint\\FXA.DPSE.NAB.Service.Logging.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName26 = FXA.DPSE.sln
+		SccProjectName26 = FXA.DPSE.NAB.Service.Logging.Endpoint
+		SccLocalPath26 = FXA.DPSE.NAB.Service.Logging.Endpoint
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|x86.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|x86.ActiveCfg = Release|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53}.Release|x86.ActiveCfg = Release|Any CPU
+		{6E682A14-C872-4813-B620-76E108DEA683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E682A14-C872-4813-B620-76E108DEA683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E682A14-C872-4813-B620-76E108DEA683}.Debug|x86.ActiveCfg = Debug|x86
+		{6E682A14-C872-4813-B620-76E108DEA683}.Debug|x86.Build.0 = Debug|x86
+		{6E682A14-C872-4813-B620-76E108DEA683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E682A14-C872-4813-B620-76E108DEA683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E682A14-C872-4813-B620-76E108DEA683}.Release|x86.ActiveCfg = Release|x86
+		{6E682A14-C872-4813-B620-76E108DEA683}.Release|x86.Build.0 = Release|x86
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C}.Release|x86.ActiveCfg = Release|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|x86.ActiveCfg = Release|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Release|x86.ActiveCfg = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Release|x86.ActiveCfg = Release|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|x86.ActiveCfg = Release|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Release|x86.ActiveCfg = Release|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Release|x86.ActiveCfg = Release|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354}.Release|x86.ActiveCfg = Release|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|x86.ActiveCfg = Release|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Release|x86.ActiveCfg = Release|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Release|x86.ActiveCfg = Release|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16549347-E11D-48C7-8542-7971699FF59E}.Release|x86.ActiveCfg = Release|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Release|x86.ActiveCfg = Release|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Release|x86.ActiveCfg = Release|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66}.Release|x86.ActiveCfg = Release|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B36379C-E561-4923-97A9-1B5175C88793} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{47F7DC66-C9B4-4724-8BC7-C0AA04B16A53} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{6E682A14-C872-4813-B620-76E108DEA683} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{F68A1D19-93FB-47C1-A22B-42BEA3E4FD8C} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68} = {2D0242C3-1F8E-432A-B2C9-7E60655136DB}
+		{D3BF73C3-B448-445C-9D87-82EB535E21EF} = {C28F91DA-47F7-4F33-A06F-CBE9A079E27C}
+		{522D31E9-D066-49A5-9D51-62B8D676AEF9} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{17C6EC38-7066-4502-946F-D9556BABBC38} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{4B8CB4FE-0EA7-4549-A96F-633CAAC0A132} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{E5928C9B-FA7D-46AC-BB7E-E4C64746973E} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{68D98D40-FF9A-4786-BA7C-82172653C4A5} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0} = {D3BF73C3-B448-445C-9D87-82EB535E21EF}
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9} = {D3BF73C3-B448-445C-9D87-82EB535E21EF}
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D} = {C28F91DA-47F7-4F33-A06F-CBE9A079E27C}
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD} = {17C6EC38-7066-4502-946F-D9556BABBC38}
+		{CD98499B-18C1-416D-AF42-ACC898AA0901} = {17C6EC38-7066-4502-946F-D9556BABBC38}
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB} = {17C6EC38-7066-4502-946F-D9556BABBC38}
+		{97E7168E-1318-4C82-9C74-E08522270BE9} = {DD39629E-6B01-4FB2-A574-6A220862D2E6}
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF} = {522D31E9-D066-49A5-9D51-62B8D676AEF9}
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697} = {522D31E9-D066-49A5-9D51-62B8D676AEF9}
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4} = {522D31E9-D066-49A5-9D51-62B8D676AEF9}
+		{C2160AC0-71F6-4EBD-8F5A-160B0A974354} = {4B8CB4FE-0EA7-4549-A96F-633CAAC0A132}
+		{583DB3E2-16D1-4B66-BEDF-F897A65CA4DB} = {4B8CB4FE-0EA7-4549-A96F-633CAAC0A132}
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679} = {E5928C9B-FA7D-46AC-BB7E-E4C64746973E}
+		{793F9D0B-1466-492E-AD37-0832556A87B2} = {E5928C9B-FA7D-46AC-BB7E-E4C64746973E}
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2} = {E5928C9B-FA7D-46AC-BB7E-E4C64746973E}
+		{16549347-E11D-48C7-8542-7971699FF59E} = {E5928C9B-FA7D-46AC-BB7E-E4C64746973E}
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D} = {68D98D40-FF9A-4786-BA7C-82172653C4A5}
+		{C961A7C9-C093-42D4-BA08-76C52E39434F} = {68D98D40-FF9A-4786-BA7C-82172653C4A5}
+		{DC31D820-D3C7-43DA-8606-EF8DC095AD66} = {68D98D40-FF9A-4786-BA7C-82172653C4A5}
+		{175A106E-5FB3-43B9-8410-77A49E230ADF} = {68D98D40-FF9A-4786-BA7C-82172653C4A5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Service.DipsPayload.Business</RootNamespace>
+    <AssemblyName>FXA.DPSE.Service.DipsPayload.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\IFileSystem.cs" />
+    <Compile Include="DipsPayloadMetadataCreator.cs" />
+    <Compile Include="DipsPayloadImagesCreator.cs" />
+    <Compile Include="DipsPayloadMetadataSerializer.cs" />
+    <Compile Include="Core\IDipsPayloadImagesCreator.cs" />
+    <Compile Include="Core\IDipsPayloadMetadataSerializer.cs" />
+    <Compile Include="Core\IDipsPayloadMetadataCreator.cs" />
+    <Compile Include="FileSystem.cs" />
+    <Compile Include="PayloadBatchCreator.cs" />
+    <Compile Include="Core\IPayloadBatchCreator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9b36379c-e561-4923-97a9-1b5175c88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj">
+      <Project>{b0b59e31-f4e0-438f-8dd1-7655c121d7af}</Project>
+      <Name>FXA.DPSE.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsPayload.Business.Entity\FXA.DPSE.Service.DipsPayload.Business.Entity.csproj">
+      <Project>{94842334-8bb2-4c13-97aa-4dcd9474680d}</Project>
+      <Name>FXA.DPSE.Service.DipsPayload.Business.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsPayload.Common\FXA.DPSE.Service.DipsPayload.Common.csproj">
+      <Project>{18461a02-62a9-4b6a-97a9-fb4c409f928e}</Project>
+      <Name>FXA.DPSE.Service.DipsPayload.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsPayload.DataAccess\FXA.DPSE.Service.DipsPayload.DataAccess.csproj">
+      <Project>{ebb68583-b5eb-49ad-a635-aee30b555868}</Project>
+      <Name>FXA.DPSE.Service.DipsPayload.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DpseSettings.StyleCop" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

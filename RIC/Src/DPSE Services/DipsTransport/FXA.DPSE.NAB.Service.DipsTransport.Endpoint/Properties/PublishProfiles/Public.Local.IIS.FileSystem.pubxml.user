@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\dipstransport</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>11/05/2015 13:39:43</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Wcf.dll">
+      <publishTime>11/05/2015 13:39:41</publishTime>
+    </File>
+    <File Include="bin/ChilkatDotNet45.dll">
+      <publishTime>11/05/2015 13:40:27</publishTime>
+    </File>
+    <File Include="bin/crypto.dll">
+      <publishTime>10/26/2015 09:07:04</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/05/2015 13:41:05</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/05/2015 13:40:35</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Common.dll">
+      <publishTime>11/10/2015 10:35:38</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Service.dll">
+      <publishTime>11/10/2015 15:22:40</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.NAB.Service.DipsTransport.Endpoint.dll">
+      <publishTime>11/10/2015 15:31:42</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DipsTransport.Business.dll">
+      <publishTime>11/10/2015 15:31:40</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DipsTransport.Business.Entities.dll">
+      <publishTime>11/10/2015 15:31:38</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DipsTransport.Common.dll">
+      <publishTime>11/10/2015 15:31:39</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DipsTransport.DataAccess.dll">
+      <publishTime>11/10/2015 15:31:40</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DipsTransport.dll">
+      <publishTime>11/10/2015 15:31:41</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DTO.dll">
+      <publishTime>11/10/2015 11:01:37</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>11/05/2015 13:40:43</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/26/2015 09:06:26</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/09/2013 11:04:28</publishTime>
+    </File>
+    <File Include="bin/Web.Deploy.config">
+      <publishTime>10/30/2015 11:36:58</publishTime>
+    </File>
+    <File Include="Deploy.ps1">
+      <publishTime>11/10/2015 07:37:45</publishTime>
+    </File>
+    <File Include="DipsTransportService.svc">
+      <publishTime>10/07/2015 12:59:31</publishTime>
+    </File>
+    <File Include="DpseSettings.StyleCop">
+      <publishTime>10/07/2015 08:40:43</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/07/2015 08:40:43</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/28/2015 12:32:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/30/2015 14:54:02</publishTime>
+    </File>
+    <File Include="Web.csconfig">
+      <publishTime>11/10/2015 10:34:51</publishTime>
+    </File>
+    <File Include="Web.Deploy.config">
+      <publishTime>10/30/2015 11:36:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

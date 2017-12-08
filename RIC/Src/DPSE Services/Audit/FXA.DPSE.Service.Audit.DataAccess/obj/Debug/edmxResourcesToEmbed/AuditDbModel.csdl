@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.AuditModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AuditDb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Audits" EntityType="FXA.DPSE.DB.AuditModel.Audit" />
+  </EntityContainer>
+  <EntityType Name="Audit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrackingIdentifier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ExternalCorrelationIdentifier" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentReferenceNumber" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="AuditDateTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Resource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ChannelType" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OperationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OperatorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

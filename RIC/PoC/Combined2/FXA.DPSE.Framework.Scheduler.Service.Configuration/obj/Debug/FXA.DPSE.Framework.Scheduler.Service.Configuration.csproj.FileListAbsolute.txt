@@ -1,0 +1,13 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined\Scheduler\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined\Scheduler\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined\Scheduler\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined\Scheduler\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Scheduler.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined2\FXA.DPSE.Framework.Scheduler.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Scheduler.Service.Configuration.pdb

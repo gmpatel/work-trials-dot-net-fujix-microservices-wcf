@@ -1,0 +1,8 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\bin\Debug\FXA.DPSE.Service.DTO.dll.config
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\bin\Debug\FXA.DPSE.Service.DTO.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\bin\Debug\FXA.DPSE.Service.DTO.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\obj\Debug\FXA.DPSE.Service.DTO.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\obj\Debug\FXA.DPSE.Service.DTO.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Messages\FXA.DPSE.Service.DTO\obj\Debug\FXA.DPSE.Service.DTO.csprojResolveAssemblyReference.cache

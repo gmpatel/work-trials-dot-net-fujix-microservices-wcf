@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.DipsTransportModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Transmission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CreationDateTime" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="TransportedDateTime" Type="datetime2" Precision="7" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileSHAHash" Type="nvarchar" MaxLength="512" />
+    <Property Name="TransactionCount" Type="bigint" />
+    <Property Name="RetryCount" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransmissionBatch">
+    <Key>
+      <PropertyRef Name="TransmissionId" />
+      <PropertyRef Name="PaymentInstructionId" />
+    </Key>
+    <Property Name="TransmissionId" Type="bigint" Nullable="false" />
+    <Property Name="PaymentInstructionId" Type="bigint" Nullable="false" />
+    <Property Name="BatchNumber" Type="nvarchar" MaxLength="8" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="TransactionCount" Type="int" />
+  </EntityType>
+  <Association Name="FK_TransmissionBatch_Transmission">
+    <End Role="Transmission" Type="Self.Transmission" Multiplicity="1" />
+    <End Role="TransmissionBatch" Type="Self.TransmissionBatch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transmission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TransmissionBatch">
+        <PropertyRef Name="TransmissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FXADPSEDBDipsTransportModelStoreContainer">
+    <EntitySet Name="Transmission" EntityType="Self.Transmission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TransmissionBatch" EntityType="Self.TransmissionBatch" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TransmissionBatch_Transmission" Association="Self.FK_TransmissionBatch_Transmission">
+      <End Role="Transmission" EntitySet="Transmission" />
+      <End Role="TransmissionBatch" EntitySet="TransmissionBatch" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

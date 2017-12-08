@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBShadowPostModelStoreContainer" CdmEntityContainer="ShadowPostDb">
+    <EntitySetMapping Name="ShadowPosts">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.ShadowPostModel.ShadowPost">
+        <MappingFragment StoreEntitySet="ShadowPost">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+          <ScalarProperty Name="RequestGuid" ColumnName="RequestGuid" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="IpAddressV4" ColumnName="IpAddressV4" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

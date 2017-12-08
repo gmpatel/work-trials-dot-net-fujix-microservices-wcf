@@ -1,0 +1,15 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\obj\Debug\FXA.Framework.Repository.Core.EF.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\FXA.Framework.Repository.Core.EF.dll.config
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\FXA.Framework.Repository.Core.EF.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\FXA.Framework.Repository.Core.EF.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\EntityFramework.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\FXA.Framework.Repository.Core.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\LinqKit.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\System.Net.Http.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\FXA.Framework.Repository.Core.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\EntityFramework.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\obj\Debug\FXA.Framework.Repository.Core.EF.csprojResolveAssemblyReference.cache
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\obj\Debug\FXA.Framework.Repository.Core.EF.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core.EF\obj\Debug\FXA.Framework.Repository.Core.EF.pdb

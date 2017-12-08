@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.TestConsole", "FXA.DPSET.TestConsole\FXA.DPSET.TestConsole.csproj", "{56F53060-5A70-44F3-A693-88C7EB4B23D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.Framework.Service.Library", "FXA.DPSET.Framework.Service.Library\FXA.DPSET.Framework.Service.Library.csproj", "{D2B8DFED-B609-4DF7-B551-FADB5D561D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.Framework.Service", "FXA.DPSET.Framework.Service\FXA.DPSET.Framework.Service.csproj", "{79D90D36-2078-4568-8821-4E41E39E9270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.Framework.Service.Infrastructure", "FXA.DPSET.Framework.Service.Infrastructure\FXA.DPSET.Framework.Service.Infrastructure.csproj", "{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.UnitTests", "FXA.DPSET.UnitTests\FXA.DPSET.UnitTests.csproj", "{30049060-C58A-44EA-B7DC-5D867D09994E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSET.Framework.Common", "FXA.DPSET.Framework.Common\FXA.DPSET.Framework.Common.csproj", "{A60A03DE-CC67-499E-980E-7A26586795EF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gmpatel.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.DPSET.TestConsole\\FXA.DPSET.TestConsole.csproj
+		SccProjectName1 = FXA.DPSET.TestConsole
+		SccLocalPath1 = FXA.DPSET.TestConsole
+		SccProjectUniqueName2 = FXA.DPSET.Framework.Service.Library\\FXA.DPSET.Framework.Service.Library.csproj
+		SccProjectName2 = FXA.DPSET.Framework.Service.Library
+		SccLocalPath2 = FXA.DPSET.Framework.Service.Library
+		SccProjectUniqueName3 = FXA.DPSET.Framework.Service\\FXA.DPSET.Framework.Service.csproj
+		SccProjectName3 = FXA.DPSET.Framework.Service
+		SccLocalPath3 = FXA.DPSET.Framework.Service
+		SccProjectUniqueName4 = FXA.DPSET.Framework.Service.Infrastructure\\FXA.DPSET.Framework.Service.Infrastructure.csproj
+		SccProjectName4 = FXA.DPSET.Framework.Service.Infrastructure
+		SccLocalPath4 = FXA.DPSET.Framework.Service.Infrastructure
+		SccProjectUniqueName5 = FXA.DPSET.UnitTests\\FXA.DPSET.UnitTests.csproj
+		SccProjectName5 = FXA.DPSET.UnitTests
+		SccLocalPath5 = FXA.DPSET.UnitTests
+		SccProjectUniqueName6 = FXA.DPSET.Framework.Common\\FXA.DPSET.Framework.Common.csproj
+		SccProjectName6 = FXA.DPSET.Framework.Common
+		SccLocalPath6 = FXA.DPSET.Framework.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F53060-5A70-44F3-A693-88C7EB4B23D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F53060-5A70-44F3-A693-88C7EB4B23D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F53060-5A70-44F3-A693-88C7EB4B23D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F53060-5A70-44F3-A693-88C7EB4B23D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B8DFED-B609-4DF7-B551-FADB5D561D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B8DFED-B609-4DF7-B551-FADB5D561D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B8DFED-B609-4DF7-B551-FADB5D561D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B8DFED-B609-4DF7-B551-FADB5D561D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D90D36-2078-4568-8821-4E41E39E9270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D90D36-2078-4568-8821-4E41E39E9270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D90D36-2078-4568-8821-4E41E39E9270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D90D36-2078-4568-8821-4E41E39E9270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7128F2BC-25B1-4F70-A1F1-0A1397F93E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30049060-C58A-44EA-B7DC-5D867D09994E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30049060-C58A-44EA-B7DC-5D867D09994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30049060-C58A-44EA-B7DC-5D867D09994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30049060-C58A-44EA-B7DC-5D867D09994E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60A03DE-CC67-499E-980E-7A26586795EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60A03DE-CC67-499E-980E-7A26586795EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60A03DE-CC67-499E-980E-7A26586795EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60A03DE-CC67-499E-980E-7A26586795EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

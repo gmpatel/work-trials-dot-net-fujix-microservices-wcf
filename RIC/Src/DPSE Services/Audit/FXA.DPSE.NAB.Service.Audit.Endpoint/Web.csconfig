@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <connectionStrings>
+    <add name="AuditDb" connectionString='@Model.GetValue("AuditServiceConnectionString")' providerName="System.Data.EntityClient" xdt:Locator="Match(name)" xdt:Transform="SetAttributes" />
+  </connectionStrings>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("LoggingServiceURL")' enabled="false" />
+      <auditService url='@Model.GetValue("AuditServiceURL")' enabled="false" />
+    </services>
+  </frameworkConfig>
+</configuration>

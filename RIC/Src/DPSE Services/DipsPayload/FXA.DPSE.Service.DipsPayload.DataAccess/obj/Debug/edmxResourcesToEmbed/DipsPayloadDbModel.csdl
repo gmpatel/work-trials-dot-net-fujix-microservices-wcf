@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.DipsPayloadModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PayloadDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PayloadId" Type="Int64" Nullable="false" />
+    <Property Name="ElectronicTraceTrackingId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Payload" Relationship="Self.FK_Payload" FromRole="PayloadDetails" ToRole="Payloads" />
+  </EntityType>
+  <EntityType Name="Payload">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionId" Type="Int64" Nullable="false" />
+    <Property Name="ChannelType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateTimeCreated" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="RelativePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LockedBy" Type="Guid" />
+    <Property Name="Locked" Type="Boolean" Nullable="false" />
+    <Property Name="DateTimeLocked" Type="DateTime" Precision="7" />
+    <Property Name="Transported" Type="Boolean" Nullable="false" />
+    <Property Name="DateTimeTransported" Type="DateTime" Precision="7" />
+    <NavigationProperty Name="PayloadDetails" Relationship="Self.FK_Payload" FromRole="Payloads" ToRole="PayloadDetails" />
+  </EntityType>
+  <Association Name="FK_Payload">
+    <End Role="Payloads" Type="Self.Payload" Multiplicity="1" />
+    <End Role="PayloadDetails" Type="Self.PayloadDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payloads">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PayloadDetails">
+        <PropertyRef Name="PayloadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DipsPayloadDb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PayloadDetails" EntityType="Self.PayloadDetail" />
+    <EntitySet Name="Payloads" EntityType="Self.Payload" />
+    <AssociationSet Name="FK_Payload" Association="Self.FK_Payload">
+      <End Role="Payloads" EntitySet="Payloads" />
+      <End Role="PayloadDetails" EntitySet="PayloadDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

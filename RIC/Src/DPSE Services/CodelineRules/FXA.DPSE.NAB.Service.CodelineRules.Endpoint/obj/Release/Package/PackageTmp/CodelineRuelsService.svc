@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="FXA.DPSE.Service.CodelineRules.ICodelineRulesService,FXA.DPSE.Service.CodelineRules" 
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf"
+%>

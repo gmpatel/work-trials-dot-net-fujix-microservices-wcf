@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <connectionStrings>
+    <add name="PaymentInstructionDb" connectionString='@Model.GetValue("PaymentInstructionDbConnectionString")' providerName="System.Data.EntityClient" xdt:Transform="SetAttributes(connectionString)" />
+  </connectionStrings>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+  <serviceConfig>
+    <dipsTransportProcessingTimeRange start='@Model.GetValue("dipsTransportProcessingTimeRangeStart")' end='@Model.GetValue("dipsTransportProcessingTimeRangeEnd")' xdt:Transform="SetAttributes(start,end)" />
+    <headerValidation operations="PaymentInstruction,"  xdt:Transform="SetAttributes(start,end)" />
+    <traceTrackingService url='@Model.GetValue("traceTrackingServiceUrl")' xdt:Transform="SetAttributes(url)" />
+    <paymentValidationService url='@Model.GetValue("paymentValidationServiceUrl")' xdt:Transform="SetAttributes(url)" />
+    <dipsPayloadService url='@Model.GetValue("dipsPayloadServiceUrl")' xdt:Transform="SetAttributes(url)" />
+    <shadowPostService url='@Model.GetValue("shadowPostServiceUrl")' xdt:Transform="SetAttributes(url)" />
+    
+    <payloadAccountNumber header='@Model.GetValue("payloadAccountNumberHeader")' xdt:Transform="SetAttributes(header)" />
+    <payloadBsbNumber header='@Model.GetValue("payloadBsbNumberHeader")' credit='@Model.GetValue("payloadBsbNumberCredit")' xdt:Transform="SetAttributes(header,credit)" />
+    <payloadTransactionCode header='@Model.GetValue("payloadTransactionCodeHeader")' debit='@Model.GetValue("payloadTransactionCodeDebit")' credit='@Model.GetValue("payloadTransactionCodeCredit")' xdt:Transform="SetAttributes(header,debit,credit)" />
+    <payloadVoucherType header='@Model.GetValue("payloadVoucherTypeHeader")' debit='@Model.GetValue("payloadVoucherTypeDebit")' credit='@Model.GetValue("payloadVoucherTypeCredit")' xdt:Transform="SetAttributes(header,debit,credit)" />
+    <payloadProcessingDetails batchClient='@Model.GetValue("payloadProcessingDetailsBatchClient")' batchType='@Model.GetValue("payloadProcessingDetailsBatchType")' batchAccountNumber='@Model.GetValue("payloadProcessingDetailsBatchAccountNumber")' workType='@Model.GetValue("payloadProcessingDetailsWorkType")' unitId='@Model.GetValue("payloadProcessingDetailsUnitId")' state='@Model.GetValue("payloadProcessingDetailsState")' collectingBank='@Model.GetValue("payloadProcessingDetailsCollectingBank")' captureBsb='@Model.GetValue("payloadProcessingDetailsCaptureBsb")' source='@Model.GetValue("payloadProcessingDetailsSource")' documentReferenceNumberPreFix='@Model.GetValue("payloadProcessingDetailsDocumentReferenceNumberPreFix")' headerVoucherFrontImagePath='@Model.GetValue("payloadProcessingDetailsCeaderVoucherFrontImagePath")' headerVoucherRearImagePath='@Model.GetValue("payloadProcessingDetailsCeaderVoucherRearImagePath")' creditVoucherFrontImagePath='@Model.GetValue("payloadProcessingDetailsCreditVoucherFrontImagePath")' creditVoucherRearImagePath='@Model.GetValue("payloadProcessingDetailsCreditVoucherRearImagePath")' xdt:Transform="SetAttributes(batchClient,batchType,batchAccountNumber,workType,unitId,state,collectingBank,captureBsb,source,documentReferenceNumberPreFix,headerVoucherFrontImagePath,headerVoucherRearImagePath,creditVoucherFrontImagePath,creditVoucherRearImagePath)" />
+  </serviceConfig>
+</configuration>

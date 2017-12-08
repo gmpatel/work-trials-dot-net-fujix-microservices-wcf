@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <log4net>
+    <appender name="RollingDebugAppender" type="log4net.Appender.RollingFileAppender">
+      <file type="log4net.Util.PatternString" value='@Model.GetValue("log4NetPatternString")' xdt:Transform="SetAttributes(value)" />
+    </appender>
+    <root>
+      <level value='@Model.GetValue("logLevel")' xdt:Transform="SetAttributes(value)" />
+      <appender-ref ref="RollingDebugAppender" />
+    </root>
+  </log4net>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+  <system.serviceModel>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior xdt:Transform="Replace">
+          <!-- To avoid disclosing metadata information, set the values below to false before deployment -->
+          <serviceMetadata httpGetEnabled='@Model.GetValue("serviceMetadataHttpGetEnabled")' httpsGetEnabled='@Model.GetValue("serviceMetadataHttpsGetEnabled")' />
+          <!-- To receive exception details in faults for debugging purposes, set the value below to true.  Set to false before deployment to avoid disclosing exception information -->
+          <serviceDebug includeExceptionDetailInFaults='@Model.GetValue("serviceDebugIncludeExceptionDetailInFaults")' />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+  <system.webServer>
+    <directoryBrowse enabled='@Model.GetValue("directoryBrowseEnabled")' xdt:Transform="SetAttributes" />
+  </system.webServer>
+</configuration>

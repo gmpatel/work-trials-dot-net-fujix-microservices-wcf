@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBDipsPayloadModelStoreContainer" CdmEntityContainer="DipsPayloadDb">
+    <EntitySetMapping Name="PayloadDetails">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsPayloadModel.PayloadDetail">
+        <MappingFragment StoreEntitySet="PayloadDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PayloadId" ColumnName="PayloadId" />
+          <ScalarProperty Name="ElectronicTraceTrackingId" ColumnName="ElectronicTraceTrackingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payloads">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsPayloadModel.Payload">
+        <MappingFragment StoreEntitySet="Payloads">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+          <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+          <ScalarProperty Name="RelativePath" ColumnName="RelativePath" />
+          <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="DateTimeLocked" ColumnName="DateTimeLocked" />
+          <ScalarProperty Name="Transported" ColumnName="Transported" />
+          <ScalarProperty Name="DateTimeTransported" ColumnName="DateTimeTransported" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

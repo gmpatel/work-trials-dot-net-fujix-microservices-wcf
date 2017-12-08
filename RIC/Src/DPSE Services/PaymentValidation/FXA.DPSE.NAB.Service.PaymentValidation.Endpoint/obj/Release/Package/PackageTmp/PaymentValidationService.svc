@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="FXA.DPSE.Service.PaymentValidation.Core.IPaymentValidationService,FXA.DPSE.Service.PaymentValidation" 
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf"
+%>

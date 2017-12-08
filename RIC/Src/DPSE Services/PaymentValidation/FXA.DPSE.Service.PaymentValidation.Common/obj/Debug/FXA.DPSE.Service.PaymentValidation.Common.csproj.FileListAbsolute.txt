@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.PaymentValidation.Common\bin\Debug\FXA.DPSE.Service.PaymentValidation.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.PaymentValidation.Common\bin\Debug\FXA.DPSE.Service.PaymentValidation.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.PaymentValidation.Common\obj\Debug\FXA.DPSE.Service.PaymentValidation.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.PaymentValidation.Common\obj\Debug\FXA.DPSE.Service.PaymentValidation.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\PaymentValidation\FXA.DPSE.Service.PaymentValidation.Common\obj\Debug\FXA.DPSE.Service.PaymentValidation.Common.csprojResolveAssemblyReference.cache

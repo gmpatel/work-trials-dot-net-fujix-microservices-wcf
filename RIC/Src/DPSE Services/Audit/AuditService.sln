@@ -1,0 +1,148 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.Audit.Endpoint", "FXA.DPSE.NAB.Service.Audit.Endpoint\FXA.DPSE.NAB.Service.Audit.Endpoint.csproj", "{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FXA.DPSE.DB.Audit", "FXA.DPSE.DB.Audit\FXA.DPSE.DB.Audit.sqlproj", "{955451AD-ACE5-450D-B274-6A23E9EFEA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Audit.Business", "FXA.DPSE.Service.Audit.Business\FXA.DPSE.Service.Audit.Business.csproj", "{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Audit.Business.Test.Unit", "FXA.DPSE.Service.Audit.Business.Test.Unit\FXA.DPSE.Service.Audit.Business.Test.Unit.csproj", "{A5DF0AF0-686F-4D68-9455-9A916ECFA994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Audit", "FXA.DPSE.Service.Audit\FXA.DPSE.Service.Audit.csproj", "{2968EEDA-248C-4B0D-AC73-2DC738985CBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Audit", "Audit", "{1C410C86-AE1D-4FB4-A555-369F3436DD0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Audit.Common", "FXA.DPSE.Service.Audit.Common\FXA.DPSE.Service.Audit.Common.csproj", "{5645719A-A562-4B43-935C-B348F9A413F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FC9579EA-00F5-4F17-81C7-D0274A7F9AAB}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.csproj", "{BC3F0F9F-D55B-4F32-8819-CF9CD62EAE67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Audit.DataAccess", "FXA.DPSE.Service.Audit.DataAccess\FXA.DPSE.Service.Audit.DataAccess.csproj", "{AE5915FA-F626-4DD9-9CDD-38E4B521D96E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.DPSE.NAB.Service.Audit.Endpoint\\FXA.DPSE.NAB.Service.Audit.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName1 = AuditService.sln
+		SccProjectName1 = FXA.DPSE.NAB.Service.Audit.Endpoint
+		SccLocalPath1 = FXA.DPSE.NAB.Service.Audit.Endpoint
+		SccProjectUniqueName2 = FXA.DPSE.DB.Audit\\FXA.DPSE.DB.Audit.sqlproj
+		SccProjectTopLevelParentUniqueName2 = AuditService.sln
+		SccProjectName2 = FXA.DPSE.DB.Audit
+		SccLocalPath2 = FXA.DPSE.DB.Audit
+		SccProjectUniqueName3 = FXA.DPSE.Service.Audit.Business\\FXA.DPSE.Service.Audit.Business.csproj
+		SccProjectTopLevelParentUniqueName3 = AuditService.sln
+		SccProjectName3 = FXA.DPSE.Service.Audit.Business
+		SccLocalPath3 = FXA.DPSE.Service.Audit.Business
+		SccProjectUniqueName4 = FXA.DPSE.Service.Audit.Business.Test.Unit\\FXA.DPSE.Service.Audit.Business.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName4 = AuditService.sln
+		SccProjectName4 = FXA.DPSE.Service.Audit.Business.Test.Unit
+		SccLocalPath4 = FXA.DPSE.Service.Audit.Business.Test.Unit
+		SccProjectUniqueName5 = FXA.DPSE.Service.Audit\\FXA.DPSE.Service.Audit.csproj
+		SccProjectTopLevelParentUniqueName5 = AuditService.sln
+		SccProjectName5 = FXA.DPSE.Service.Audit
+		SccLocalPath5 = FXA.DPSE.Service.Audit
+		SccProjectUniqueName6 = FXA.DPSE.Service.Audit.Common\\FXA.DPSE.Service.Audit.Common.csproj
+		SccProjectTopLevelParentUniqueName6 = AuditService.sln
+		SccProjectName6 = FXA.DPSE.Service.Audit.Common
+		SccLocalPath6 = FXA.DPSE.Service.Audit.Common
+		SccProjectUniqueName7 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName7 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath7 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName8 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName8 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath8 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName9 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.csproj
+		SccProjectName9 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer
+		SccLocalPath9 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer
+		SccProjectUniqueName10 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName10 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath10 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName11 = FXA.DPSE.Service.Audit.DataAccess\\FXA.DPSE.Service.Audit.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName11 = AuditService.sln
+		SccProjectName11 = FXA.DPSE.Service.Audit.DataAccess
+		SccLocalPath11 = FXA.DPSE.Service.Audit.DataAccess
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5DF0AF0-686F-4D68-9455-9A916ECFA994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DF0AF0-686F-4D68-9455-9A916ECFA994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DF0AF0-686F-4D68-9455-9A916ECFA994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DF0AF0-686F-4D68-9455-9A916ECFA994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5645719A-A562-4B43-935C-B348F9A413F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5645719A-A562-4B43-935C-B348F9A413F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5645719A-A562-4B43-935C-B348F9A413F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5645719A-A562-4B43-935C-B348F9A413F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3F0F9F-D55B-4F32-8819-CF9CD62EAE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3F0F9F-D55B-4F32-8819-CF9CD62EAE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3F0F9F-D55B-4F32-8819-CF9CD62EAE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3F0F9F-D55B-4F32-8819-CF9CD62EAE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5915FA-F626-4DD9-9CDD-38E4B521D96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5915FA-F626-4DD9-9CDD-38E4B521D96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5915FA-F626-4DD9-9CDD-38E4B521D96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5915FA-F626-4DD9-9CDD-38E4B521D96E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7CBECFD-CBA2-48AD-930E-963FC46EB8A4} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{955451AD-ACE5-450D-B274-6A23E9EFEA38} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{3C33B3DF-D08B-44BD-A072-6DACF9C2E697} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{A5DF0AF0-686F-4D68-9455-9A916ECFA994} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{2968EEDA-248C-4B0D-AC73-2DC738985CBF} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{5645719A-A562-4B43-935C-B348F9A413F0} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+		{AE5915FA-F626-4DD9-9CDD-38E4B521D96E} = {1C410C86-AE1D-4FB4-A555-369F3436DD0B}
+	EndGlobalSection
+EndGlobal

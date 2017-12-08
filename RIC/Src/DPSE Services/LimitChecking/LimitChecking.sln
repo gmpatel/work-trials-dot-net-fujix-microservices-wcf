@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LimitChecking", "LimitChecking", "{65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking.Business", "FXA.DPSE.Service.LimitChecking.Business\FXA.DPSE.Service.LimitChecking.Business.csproj", "{793F9D0B-1466-492E-AD37-0832556A87B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking", "FXA.DPSE.Service.LimitChecking\FXA.DPSE.Service.LimitChecking.csproj", "{0E3FB9EB-2044-436D-835F-9EBFCD466679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking.Common", "FXA.DPSE.Service.LimitChecking.Common\FXA.DPSE.Service.LimitChecking.Common.csproj", "{07239996-BD02-4282-8E23-5E5B4BD31737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29EE1358-491B-4885-960D-C75D05BEC1AB}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.LimitChecking.Business.Test.Unit", "FXA.DPSE.Service.LimitChecking.Business.Test.Unit\FXA.DPSE.Service.LimitChecking.Business.Test.Unit.csproj", "{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.LimitChecking.Endpoint", "FXA.DPSE.NAB.Service.LimitChecking.Endpoint\FXA.DPSE.NAB.Service.LimitChecking.Endpoint.csproj", "{C56CBB14-3C5A-437F-8288-3BF3144234F2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local:8080/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.DPSE.Service.LimitChecking.Business\\FXA.DPSE.Service.LimitChecking.Business.csproj
+		SccProjectTopLevelParentUniqueName1 = LimitChecking.sln
+		SccProjectName1 = FXA.DPSE.Service.LimitChecking.Business
+		SccLocalPath1 = FXA.DPSE.Service.LimitChecking.Business
+		SccProjectUniqueName2 = FXA.DPSE.Service.LimitChecking\\FXA.DPSE.Service.LimitChecking.csproj
+		SccProjectTopLevelParentUniqueName2 = LimitChecking.sln
+		SccProjectName2 = FXA.DPSE.Service.LimitChecking
+		SccLocalPath2 = FXA.DPSE.Service.LimitChecking
+		SccProjectUniqueName3 = FXA.DPSE.Service.LimitChecking.Common\\FXA.DPSE.Service.LimitChecking.Common.csproj
+		SccProjectTopLevelParentUniqueName3 = LimitChecking.sln
+		SccProjectName3 = FXA.DPSE.Service.LimitChecking.Common
+		SccLocalPath3 = FXA.DPSE.Service.LimitChecking.Common
+		SccProjectUniqueName4 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName4 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath4 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName5 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName5 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath5 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName6 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName6 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath6 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName7 = FXA.DPSE.Service.LimitChecking.Business.Test.Unit\\FXA.DPSE.Service.LimitChecking.Business.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName7 = LimitChecking.sln
+		SccProjectName7 = FXA.DPSE.Service.LimitChecking.Business.Test.Unit
+		SccLocalPath7 = FXA.DPSE.Service.LimitChecking.Business.Test.Unit
+		SccProjectUniqueName8 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint\\FXA.DPSE.NAB.Service.LimitChecking.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName8 = LimitChecking.sln
+		SccProjectName8 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint
+		SccLocalPath8 = FXA.DPSE.NAB.Service.LimitChecking.Endpoint
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793F9D0B-1466-492E-AD37-0832556A87B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{793F9D0B-1466-492E-AD37-0832556A87B2} = {65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679} = {65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}
+		{07239996-BD02-4282-8E23-5E5B4BD31737} = {65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}
+		{C2384FAB-8579-4C3B-B6DC-C1DA17C53DA7} = {65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}
+		{C56CBB14-3C5A-437F-8288-3BF3144234F2} = {65F3A75A-BFD3-48F8-A5DB-2F1D7920855C}
+	EndGlobalSection
+EndGlobal

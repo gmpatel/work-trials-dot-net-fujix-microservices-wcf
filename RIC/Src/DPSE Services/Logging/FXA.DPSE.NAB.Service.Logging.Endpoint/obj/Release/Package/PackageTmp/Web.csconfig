@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <log4net>
+    <appender name="RollingDebugAppender" type="log4net.Appender.RollingFileAppender">
+      <param name="PreserveLogFileNameExtension" value="true" />
+      <file type="log4net.Util.PatternString" value='@Model.GetValue("Log4NetPatternString")' xdt:Transform="SetAttributes(value)" />
+      <appendToFile value="true" />
+      <rollingStyle value="Size" />
+      <maxSizeRollBackups value="5" />
+      <maximumFileSize value="2KB" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <level value="All" />
+      <appender-ref ref="RollingDebugAppender" />
+    </root>
+  </log4net>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+</configuration>

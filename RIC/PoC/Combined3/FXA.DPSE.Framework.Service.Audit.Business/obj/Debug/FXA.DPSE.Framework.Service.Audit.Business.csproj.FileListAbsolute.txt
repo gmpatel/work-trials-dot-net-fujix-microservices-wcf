@@ -1,0 +1,8 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\bin\Debug\FXA.DPSE.Framework.Service.Audit.Business.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\bin\Debug\FXA.DPSE.Framework.Service.Audit.Business.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\obj\Debug\FXA.DPSE.Framework.Service.Audit.Business.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\obj\Debug\FXA.DPSE.Framework.Service.Audit.Business.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\bin\Debug\FXA.DPSE.Framework.Service.Audit.Business.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\bin\Debug\FXA.DPSE.Framework.Service.Audit.Business.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\obj\Debug\FXA.DPSE.Framework.Service.Audit.Business.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Framework.Service.Audit.Business\obj\Debug\FXA.DPSE.Framework.Service.Audit.Business.pdb

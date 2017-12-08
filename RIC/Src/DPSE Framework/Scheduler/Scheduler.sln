@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6CA4BC88-C352-488F-97C2-BEFCD05948DE}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Scheduler", "FXA.Framework.Scheduler\FXA.Framework.Scheduler.csproj", "{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.Framework.Scheduler.Host", "FXA.Framework.Scheduler.Host\FXA.Framework.Scheduler.Host.csproj", "{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DPSE Dispatchers", "DPSE Dispatchers", "{7EC255DB-EE12-48BE-8166-321753B24810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.MessageDispatcher.DipsTransport", "..\..\DPSE Dispatchers\FXA.DPSE.MessageDispatcher.DipsTransport\FXA.DPSE.MessageDispatcher.DipsTransport.csproj", "{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.MessageDispatcher.HealthMonitor", "..\..\DPSE Dispatchers\FXA.DPSE.MessageDispatcher.HealthMonitor\FXA.DPSE.MessageDispatcher.HealthMonitor.csproj", "{99DCCCC7-8CEE-4563-BB41-B50550169AD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{D6A320F0-8BD7-49D8-98F2-1F94E707A3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.Framework.Scheduler\\FXA.Framework.Scheduler.csproj
+		SccProjectName1 = FXA.Framework.Scheduler
+		SccLocalPath1 = FXA.Framework.Scheduler
+		SccProjectUniqueName2 = FXA.Framework.Scheduler.Host\\FXA.Framework.Scheduler.Host.csproj
+		SccProjectName2 = FXA.Framework.Scheduler.Host
+		SccLocalPath2 = FXA.Framework.Scheduler.Host
+		SccProjectUniqueName3 = ..\\..\\DPSE\u0020Dispatchers\\FXA.DPSE.MessageDispatcher.DipsTransport\\FXA.DPSE.MessageDispatcher.DipsTransport.csproj
+		SccProjectTopLevelParentUniqueName3 = Scheduler.sln
+		SccProjectName3 = ../../DPSE\u0020Dispatchers/FXA.DPSE.MessageDispatcher.DipsTransport
+		SccLocalPath3 = ..\\..\\DPSE\u0020Dispatchers\\FXA.DPSE.MessageDispatcher.DipsTransport
+		SccProjectUniqueName4 = ..\\..\\DPSE\u0020Dispatchers\\FXA.DPSE.MessageDispatcher.HealthMonitor\\FXA.DPSE.MessageDispatcher.HealthMonitor.csproj
+		SccProjectTopLevelParentUniqueName4 = Scheduler.sln
+		SccProjectName4 = ../../DPSE\u0020Dispatchers/FXA.DPSE.MessageDispatcher.HealthMonitor
+		SccLocalPath4 = ..\\..\\DPSE\u0020Dispatchers\\FXA.DPSE.MessageDispatcher.HealthMonitor
+		SccProjectUniqueName5 = ..\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectTopLevelParentUniqueName5 = Scheduler.sln
+		SccProjectName5 = ../Common/FXA.DPSE.Framework.Common
+		SccLocalPath5 = ..\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName6 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectTopLevelParentUniqueName6 = Scheduler.sln
+		SccProjectName6 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath6 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EDB35E-DAD4-446B-ACA9-05C9B72C9A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0} = {7EC255DB-EE12-48BE-8166-321753B24810}
+		{99DCCCC7-8CEE-4563-BB41-B50550169AD9} = {7EC255DB-EE12-48BE-8166-321753B24810}
+		{97E7168E-1318-4C82-9C74-E08522270BE9} = {D6A320F0-8BD7-49D8-98F2-1F94E707A3D8}
+		{9B36379C-E561-4923-97A9-1B5175C88793} = {D6A320F0-8BD7-49D8-98F2-1F94E707A3D8}
+	EndGlobalSection
+EndGlobal

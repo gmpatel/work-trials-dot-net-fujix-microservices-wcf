@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DuplicateIdentification.Common", "FXA.DPSE.Service.DuplicateIdentification.Common\FXA.DPSE.Service.DuplicateIdentification.Common.csproj", "{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DuplicateIdentification", "FXA.DPSE.Service.DuplicateIdentification\FXA.DPSE.Service.DuplicateIdentification.csproj", "{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DuplicateIdentification", "DuplicateIdentification", "{0901E0B5-A983-49C2-A816-3871F4FD8D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint", "FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint\FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint.csproj", "{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E59C9958-B58E-4B11-B95F-2B24A2A7AD9B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local:8080/tfs/bpsprojects
+		SccProjectUniqueName0 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName0 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath0 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName1 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName1 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath1 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName2 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName2 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath2 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccLocalPath3 = .
+		SccProjectUniqueName4 = FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint\\FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName4 = DuplicateIdentificationService.sln
+		SccProjectName4 = FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint
+		SccLocalPath4 = FXA.DPSE.NAB.Service.DuplicateIdentification.Endpoint
+		SccProjectUniqueName5 = FXA.DPSE.Service.DuplicateIdentification.Common\\FXA.DPSE.Service.DuplicateIdentification.Common.csproj
+		SccProjectTopLevelParentUniqueName5 = DuplicateIdentificationService.sln
+		SccProjectName5 = FXA.DPSE.Service.DuplicateIdentification.Common
+		SccLocalPath5 = FXA.DPSE.Service.DuplicateIdentification.Common
+		SccProjectUniqueName6 = FXA.DPSE.Service.DuplicateIdentification\\FXA.DPSE.Service.DuplicateIdentification.csproj
+		SccProjectTopLevelParentUniqueName6 = DuplicateIdentificationService.sln
+		SccProjectName6 = FXA.DPSE.Service.DuplicateIdentification
+		SccLocalPath6 = FXA.DPSE.Service.DuplicateIdentification
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4EBE311-B7F8-4AF1-8A75-F097D7BD1FC2} = {0901E0B5-A983-49C2-A816-3871F4FD8D4C}
+		{42BB2CBF-DA81-4A1B-BBA9-DAC0D6A13192} = {0901E0B5-A983-49C2-A816-3871F4FD8D4C}
+		{3E518F94-CEE7-435E-B4F1-D59ECC4FCE8A} = {0901E0B5-A983-49C2-A816-3871F4FD8D4C}
+	EndGlobalSection
+EndGlobal

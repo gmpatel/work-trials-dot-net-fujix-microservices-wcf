@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Web.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Web.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Web.Service.Configuration\bin\Debug\FXA.DPSE.Framework.Web.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Web.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Web.Service.Configuration.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Web.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Web.Service.Configuration.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Test2\FXA.DPSE.Framework.Web.Service.Configuration\obj\Debug\FXA.DPSE.Framework.Web.Service.Configuration.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\FXA.DPSE.Service.Audit.DataAccess.dll.config
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\FXA.DPSE.Service.Audit.DataAccess.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\FXA.DPSE.Service.Audit.DataAccess.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\obj\Debug\FXA.DPSE.Service.Audit.DataAccess.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\obj\Debug\FXA.DPSE.Service.Audit.DataAccess.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.DataAccess\obj\Debug\FXA.DPSE.Service.Audit.DataAccess.csprojResolveAssemblyReference.cache

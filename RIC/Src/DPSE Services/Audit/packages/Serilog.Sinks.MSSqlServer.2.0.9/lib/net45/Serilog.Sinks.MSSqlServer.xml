@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Serilog.Sinks.MSSqlServer</name>
+    </assembly>
+    <members>
+        <member name="T:Serilog.LoggerConfigurationMSSqlServerExtensions">
+            <summary>
+            Adds the WriteTo.MSSqlServer() extension method to <see cref="T:Serilog.LoggerConfiguration"/>.
+            </summary>
+        </member>
+        <member name="M:Serilog.LoggerConfigurationMSSqlServerExtensions.MSSqlServer(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.String,System.Boolean,Serilog.Events.LogEventLevel,System.Int32,System.Nullable{System.TimeSpan},System.IFormatProvider,System.Boolean)">
+            <summary>
+            Adds a sink that writes log events to a table in a MSSqlServer database.
+            Create a database and execute the table creation script found here
+            https://gist.github.com/mivano/10429656
+            </summary>
+            <param name="loggerConfiguration">The logger configuration.</param>
+            <param name="connectionString">The connection string to the database where to store the events.</param>
+            <param name="tableName">Name of the table to store the events in.</param>
+            <param name="storeProperties">Indicates if the additional properties need to be stored as well.</param>
+            <param name="restrictedToMinimumLevel">The minimum log event level required in order to write an event to the sink.</param>
+            <param name="batchPostingLimit">The maximum number of events to post in a single batch.</param>
+            <param name="period">The time to wait between checking for event batches.</param>
+            <param name="formatProvider">Supplies culture-specific formatting information, or null.</param>
+            <param name="storeTimestampInUtc">Store Timestamp In UTC</param>
+            <returns>Logger configuration, allowing configuration to continue.</returns>
+            <exception cref="T:System.ArgumentNullException">A required parameter is null.</exception>
+        </member>
+        <member name="T:Serilog.Sinks.MSSqlServer.MSSqlServerSink">
+            <summary>
+                Writes log events as rows in a table of MSSqlServer database.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.MSSqlServer.MSSqlServerSink.DefaultBatchPostingLimit">
+            <summary>
+                A reasonable default for the number of events posted in
+                each batch.
+            </summary>
+        </member>
+        <member name="F:Serilog.Sinks.MSSqlServer.MSSqlServerSink.DefaultPeriod">
+            <summary>
+                A reasonable default time to wait between checking for event batches.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.MSSqlServer.MSSqlServerSink.#ctor(System.String,System.String,System.Boolean,System.Int32,System.TimeSpan,System.IFormatProvider,System.Boolean)">
+            <summary>
+                Construct a sink posting to the specified database.
+            </summary>
+            <param name="connectionString">Connection string to access the database.</param>
+            <param name="tableName">Name of the table to store the data in.</param>
+            <param name="includeProperties">Specifies if the properties need to be saved as well.</param>
+            <param name="batchPostingLimit">The maximum number of events to post in a single batch.</param>
+            <param name="period">The time to wait between checking for event batches.</param>
+            <param name="formatProvider">Supplies culture-specific formatting information, or null.</param>
+            <param name="storeTimestampInUtc">Store Timestamp In UTC</param>
+        </member>
+        <member name="M:Serilog.Sinks.MSSqlServer.MSSqlServerSink.EmitBatchAsync(System.Collections.Generic.IEnumerable{Serilog.Events.LogEvent})">
+            <summary>
+                Emit a batch of log events, running asynchronously.
+            </summary>
+            <param name="events">The events to emit.</param>
+            <remarks>
+                Override either <see cref="M:Serilog.Sinks.PeriodicBatching.PeriodicBatchingSink.EmitBatch(System.Collections.Generic.IEnumerable{Serilog.Events.LogEvent})"/> or <see cref="M:Serilog.Sinks.PeriodicBatching.PeriodicBatchingSink.EmitBatchAsync(System.Collections.Generic.IEnumerable{Serilog.Events.LogEvent})"/>
+                ,
+                not both.
+            </remarks>
+        </member>
+        <member name="M:Serilog.Sinks.MSSqlServer.MSSqlServerSink.Dispose(System.Boolean)">
+            <summary>
+                Disposes the connection
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:Serilog.Sinks.MSSqlServer.XmlPropertyFormatter">
+            <summary>
+                Converts <see cref="T:Serilog.Events.LogEventProperty"/> values into simple scalars,
+                dictionaries and lists so that they can be persisted in MSSqlServer.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.MSSqlServer.XmlPropertyFormatter.Simplify(Serilog.Events.LogEventPropertyValue)">
+            <summary>
+                Simplify the object so as to make handling the serialized
+                representation easier.
+            </summary>
+            <param name="value">The value to simplify (possibly null).</param>
+            <returns>A simplified representation.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Transmission]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[DF_Transmission_CreationDateTime] (Default Constraint)
+       [dbo].[DF_Transmission_TransactionCount] (Default Constraint)
+       [dbo].[DF_Transmission_RetryCount] (Default Constraint)
+       [dbo].[FK_TransmissionBatch_Transmission] (Foreign Key)
+     Table rebuild
+       [dbo].[Transmission] (Table)
+
+** Supporting actions

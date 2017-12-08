@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBTraceTrackingModelStoreContainer" CdmEntityContainer="TraceTrackingDb">
+    <EntitySetMapping Name="ElectronicTraceTrackings">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTracking">
+        <MappingFragment StoreEntitySet="ElectronicTraceTracking">
+          <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+          <ScalarProperty Name="DepositAccountType" ColumnName="DepositAccountType" />
+          <ScalarProperty Name="DepositAccountBsbCode" ColumnName="DepositAccountBsbCode" />
+          <ScalarProperty Name="DepositAccountNumber" ColumnName="DepositAccountNumber" />
+          <ScalarProperty Name="DepositAccountName" ColumnName="DepositAccountName" />
+          <ScalarProperty Name="TotalTransactionAmount" ColumnName="TotalTransactionAmount" />
+          <ScalarProperty Name="ChequeCount" ColumnName="ChequeCount" />
+          <ScalarProperty Name="ClientIpAddressV4" ColumnName="ClientIpAddressV4" />
+          <ScalarProperty Name="ClientDeviceId" ColumnName="ClientDeviceId" />
+          <ScalarProperty Name="ClientSessionId" ColumnName="ClientSessionId" />
+          <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+          <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ElectronicTraceTrackingDetails">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTrackingDetail">
+        <MappingFragment StoreEntitySet="ElectronicTraceTrackingDetails">
+          <ScalarProperty Name="ChequeTraceTrackingCode" ColumnName="ChequeTraceTrackingCode" />
+          <ScalarProperty Name="ElectronicTraceTrackingId" ColumnName="ElectronicTraceTrackingId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

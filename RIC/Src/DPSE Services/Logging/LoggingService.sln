@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.Logging.Endpoint", "FXA.DPSE.NAB.Service.Logging.Endpoint\FXA.DPSE.NAB.Service.Logging.Endpoint.csproj", "{175A106E-5FB3-43B9-8410-77A49E230ADF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging", "FXA.DPSE.Service.Logging\FXA.DPSE.Service.Logging.csproj", "{64E5EC26-312C-4C74-9AAE-EB792F55E79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging.Business", "FXA.DPSE.Service.Logging.Business\FXA.DPSE.Service.Logging.Business.csproj", "{C961A7C9-C093-42D4-BA08-76C52E39434F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging.Business.Test.Unit", "FXA.DPSE.Service.Logging.Business.Test.Unit\FXA.DPSE.Service.Logging.Business.Test.Unit.csproj", "{580DE490-8F1C-4E57-A399-9CF3EF1B14D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Logging.Common", "FXA.DPSE.Service.Logging.Common\FXA.DPSE.Service.Logging.Common.csproj", "{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D7B08331-7FDA-4BA9-A994-952FE411C0B7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{B34790A9-648E-4F6F-83AA-4D94D827CF25}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local:8080/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.DPSE.NAB.Service.Logging.Endpoint\\FXA.DPSE.NAB.Service.Logging.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName1 = LoggingService.sln
+		SccProjectName1 = FXA.DPSE.NAB.Service.Logging.Endpoint
+		SccLocalPath1 = FXA.DPSE.NAB.Service.Logging.Endpoint
+		SccProjectUniqueName2 = FXA.DPSE.Service.Logging\\FXA.DPSE.Service.Logging.csproj
+		SccProjectTopLevelParentUniqueName2 = LoggingService.sln
+		SccProjectName2 = FXA.DPSE.Service.Logging
+		SccLocalPath2 = FXA.DPSE.Service.Logging
+		SccProjectUniqueName3 = FXA.DPSE.Service.Logging.Business\\FXA.DPSE.Service.Logging.Business.csproj
+		SccProjectTopLevelParentUniqueName3 = LoggingService.sln
+		SccProjectName3 = FXA.DPSE.Service.Logging.Business
+		SccLocalPath3 = FXA.DPSE.Service.Logging.Business
+		SccProjectUniqueName4 = FXA.DPSE.Service.Logging.Business.Test.Unit\\FXA.DPSE.Service.Logging.Business.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName4 = LoggingService.sln
+		SccProjectName4 = FXA.DPSE.Service.Logging.Business.Test.Unit
+		SccLocalPath4 = FXA.DPSE.Service.Logging.Business.Test.Unit
+		SccProjectUniqueName5 = FXA.DPSE.Service.Logging.Common\\FXA.DPSE.Service.Logging.Common.csproj
+		SccProjectTopLevelParentUniqueName5 = LoggingService.sln
+		SccProjectName5 = FXA.DPSE.Service.Logging.Common
+		SccLocalPath5 = FXA.DPSE.Service.Logging.Common
+		SccProjectUniqueName6 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectTopLevelParentUniqueName6 = LoggingService.sln
+		SccProjectName6 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath6 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName7 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName7 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath7 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName8 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName8 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath8 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175A106E-5FB3-43B9-8410-77A49E230ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C961A7C9-C093-42D4-BA08-76C52E39434F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580DE490-8F1C-4E57-A399-9CF3EF1B14D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580DE490-8F1C-4E57-A399-9CF3EF1B14D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580DE490-8F1C-4E57-A399-9CF3EF1B14D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580DE490-8F1C-4E57-A399-9CF3EF1B14D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{175A106E-5FB3-43B9-8410-77A49E230ADF} = {B34790A9-648E-4F6F-83AA-4D94D827CF25}
+		{64E5EC26-312C-4C74-9AAE-EB792F55E79D} = {B34790A9-648E-4F6F-83AA-4D94D827CF25}
+		{C961A7C9-C093-42D4-BA08-76C52E39434F} = {B34790A9-648E-4F6F-83AA-4D94D827CF25}
+		{580DE490-8F1C-4E57-A399-9CF3EF1B14D9} = {B34790A9-648E-4F6F-83AA-4D94D827CF25}
+		{8C6AA057-B1DD-47CE-8C83-C87D962BE0E0} = {B34790A9-648E-4F6F-83AA-4D94D827CF25}
+	EndGlobalSection
+EndGlobal

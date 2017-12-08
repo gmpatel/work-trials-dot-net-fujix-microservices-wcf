@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FXA.DPSE.DB.DipsTransportModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Transmission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CreationDateTime" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="TransportedDateTime" Type="datetime2" Precision="7" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileSHAHash" Type="nvarchar" MaxLength="512" />
+          <Property Name="TransactionCount" Type="bigint" />
+          <Property Name="RetryCount" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TransmissionBatch">
+          <Key>
+            <PropertyRef Name="TransmissionId" />
+            <PropertyRef Name="PaymentInstructionId" />
+          </Key>
+          <Property Name="TransmissionId" Type="bigint" Nullable="false" />
+          <Property Name="PaymentInstructionId" Type="bigint" Nullable="false" />
+          <Property Name="BatchNumber" Type="nvarchar" MaxLength="8" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+          <Property Name="TransactionCount" Type="int" />
+        </EntityType>
+        <Association Name="FK_TransmissionBatch_Transmission">
+          <End Role="Transmission" Type="Self.Transmission" Multiplicity="1" />
+          <End Role="TransmissionBatch" Type="Self.TransmissionBatch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transmission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransmissionBatch">
+              <PropertyRef Name="TransmissionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FXADPSEDBDipsTransportModelStoreContainer">
+          <EntitySet Name="Transmission" EntityType="Self.Transmission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TransmissionBatch" EntityType="Self.TransmissionBatch" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TransmissionBatch_Transmission" Association="Self.FK_TransmissionBatch_Transmission">
+            <End Role="Transmission" EntitySet="Transmission" />
+            <End Role="TransmissionBatch" EntitySet="TransmissionBatch" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FXA.DPSE.DB.DipsTransportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DipsTransportDb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Transmissions" EntityType="FXA.DPSE.DB.DipsTransportModel.Transmission" />
+          <EntitySet Name="TransmissionBatches" EntityType="FXA.DPSE.DB.DipsTransportModel.TransmissionBatch" />
+          <AssociationSet Name="FK_TransmissionBatch_Transmission" Association="FXA.DPSE.DB.DipsTransportModel.FK_TransmissionBatch_Transmission">
+            <End Role="Transmission" EntitySet="Transmissions" />
+            <End Role="TransmissionBatch" EntitySet="TransmissionBatches" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Transmission">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CreationDateTime" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="TransportedDateTime" Type="DateTime" Precision="7" />
+          <Property Name="FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FileName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FileSHAHash" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="TransactionCount" Type="Int64" />
+          <Property Name="RetryCount" Type="Int32" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TransmissionBatches" Relationship="FXA.DPSE.DB.DipsTransportModel.FK_TransmissionBatch_Transmission" FromRole="Transmission" ToRole="TransmissionBatch" />
+        </EntityType>
+        <EntityType Name="TransmissionBatch">
+          <Key>
+            <PropertyRef Name="TransmissionId" />
+            <PropertyRef Name="PaymentInstructionId" />
+          </Key>
+          <Property Name="TransmissionId" Type="Int64" Nullable="false" />
+          <Property Name="PaymentInstructionId" Type="Int64" Nullable="false" />
+          <Property Name="BatchNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FileName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="TransactionCount" Type="Int32" />
+          <NavigationProperty Name="Transmission" Relationship="FXA.DPSE.DB.DipsTransportModel.FK_TransmissionBatch_Transmission" FromRole="TransmissionBatch" ToRole="Transmission" />
+        </EntityType>
+        <Association Name="FK_TransmissionBatch_Transmission">
+          <End Type="FXA.DPSE.DB.DipsTransportModel.Transmission" Role="Transmission" Multiplicity="1" />
+          <End Type="FXA.DPSE.DB.DipsTransportModel.TransmissionBatch" Role="TransmissionBatch" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transmission">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TransmissionBatch">
+              <PropertyRef Name="TransmissionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FXADPSEDBDipsTransportModelStoreContainer" CdmEntityContainer="DipsTransportDb">
+          <EntitySetMapping Name="Transmissions">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsTransportModel.Transmission">
+              <MappingFragment StoreEntitySet="Transmission">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RetryCount" ColumnName="RetryCount" />
+                <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+                <ScalarProperty Name="FileSHAHash" ColumnName="FileSHAHash" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="TransportedDateTime" ColumnName="TransportedDateTime" />
+                <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransmissionBatches">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsTransportModel.TransmissionBatch">
+              <MappingFragment StoreEntitySet="TransmissionBatch">
+                <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+                <ScalarProperty Name="PaymentInstructionId" ColumnName="PaymentInstructionId" />
+                <ScalarProperty Name="TransmissionId" ColumnName="TransmissionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

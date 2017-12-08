@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e0db3a87d846457bbc60f6a91efea187" Name="Diagram1">
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.Account" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.AccountName" Width="1.5" PointX="3" PointY="5.625" />
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.ClientSession" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.PaymentInstruction" Width="1.5" PointX="6" PointY="4.375" />
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.Voucher" Width="1.5" PointX="8.25" PointY="4.5" />
+        <EntityTypeShape EntityType="FXA.DPSE.DB.PaymentInstructionModel.VoucherImage" Width="1.5" PointX="10.5" PointY="5.375" />
+        <AssociationConnector Association="FXA.DPSE.DB.PaymentInstructionModel.FK_AccountName_Account" />
+        <AssociationConnector Association="FXA.DPSE.DB.PaymentInstructionModel.FK_PaymentInstruction_Account" />
+        <AssociationConnector Association="FXA.DPSE.DB.PaymentInstructionModel.FK_PaymentInstruction_ClientSession" />
+        <AssociationConnector Association="FXA.DPSE.DB.PaymentInstructionModel.FK_Voucher_PaymentInstruction" />
+        <AssociationConnector Association="FXA.DPSE.DB.PaymentInstructionModel.FK_VoucherImage_Voucher" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\shadowpost</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>10/27/2015 14:34:15</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Wcf.dll">
+      <publishTime>10/27/2015 14:34:15</publishTime>
+    </File>
+    <File Include="bin/crypto.dll">
+      <publishTime>10/26/2015 09:07:04</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/27/2015 15:21:01</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/27/2015 15:21:01</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Common.dll">
+      <publishTime>11/19/2015 13:37:34</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Framework.Service.dll">
+      <publishTime>11/20/2015 16:37:49</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.NAB.Service.ShadowPost.Endpoint.dll">
+      <publishTime>11/20/2015 16:40:16</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.DTO.dll">
+      <publishTime>11/16/2015 13:22:23</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.Business.dll">
+      <publishTime>11/20/2015 16:40:14</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.Business.Entities.dll">
+      <publishTime>10/30/2015 13:25:53</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.Common.dll">
+      <publishTime>11/20/2015 16:40:13</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.DataAccess.dll">
+      <publishTime>11/20/2015 16:40:13</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.dll">
+      <publishTime>11/20/2015 16:40:15</publishTime>
+    </File>
+    <File Include="bin/FXA.DPSE.Service.ShadowPost.Facade.dll">
+      <publishTime>11/20/2015 16:40:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/26/2015 09:06:26</publishTime>
+    </File>
+    <File Include="bin/RestSharp.dll">
+      <publishTime>11/16/2015 08:10:01</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>09/07/2013 11:04:28</publishTime>
+    </File>
+    <File Include="bin/Web.Deploy.config">
+      <publishTime>10/30/2015 11:36:58</publishTime>
+    </File>
+    <File Include="Deploy.ps1">
+      <publishTime>11/10/2015 07:37:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/27/2015 14:33:33</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/28/2015 12:32:21</publishTime>
+    </File>
+    <File Include="ShadowPostService.svc">
+      <publishTime>10/27/2015 14:33:33</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/29/2015 07:28:57</publishTime>
+    </File>
+    <File Include="Web.csconfig">
+      <publishTime>11/10/2015 07:37:45</publishTime>
+    </File>
+    <File Include="Web.Deploy.config">
+      <publishTime>10/30/2015 11:36:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

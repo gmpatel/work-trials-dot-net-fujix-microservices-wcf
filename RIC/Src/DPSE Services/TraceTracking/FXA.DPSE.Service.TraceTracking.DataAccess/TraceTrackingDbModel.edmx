@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FXA.DPSE.DB.TraceTrackingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ElectronicTraceTracking">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RequestId" Type="nvarchar" MaxLength="50" />
+          <Property Name="ChannelType" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="ClientSessionId" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClientDeviceId" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="ClientIpAddressV4" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ChequeCount" Type="int" Nullable="false" />
+          <Property Name="TotalTransactionAmount" Type="int" Nullable="false" />
+          <Property Name="DepositAccountName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="DepositAccountNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="DepositAccountBsbCode" Type="nvarchar" MaxLength="6" Nullable="false" />
+          <Property Name="DepositAccountType" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="DateTimeCreated" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ElectronicTraceTrackingDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ElectronicTraceTrackingId" Type="bigint" Nullable="false" />
+          <Property Name="ChequeTraceTrackingCode" Type="nvarchar" MaxLength="50" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_ElectronicTraceTracking">
+          <End Role="ElectronicTraceTracking" Type="Self.ElectronicTraceTracking" Multiplicity="1" />
+          <End Role="ElectronicTraceTrackingDetails" Type="Self.ElectronicTraceTrackingDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ElectronicTraceTracking">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ElectronicTraceTrackingDetails">
+              <PropertyRef Name="ElectronicTraceTrackingId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FXADPSEDBTraceTrackingModelStoreContainer">
+          <EntitySet Name="ElectronicTraceTracking" EntityType="Self.ElectronicTraceTracking" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ElectronicTraceTrackingDetails" EntityType="Self.ElectronicTraceTrackingDetails" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ElectronicTraceTracking" Association="Self.FK_ElectronicTraceTracking">
+            <End Role="ElectronicTraceTracking" EntitySet="ElectronicTraceTracking" />
+            <End Role="ElectronicTraceTrackingDetails" EntitySet="ElectronicTraceTrackingDetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FXA.DPSE.DB.TraceTrackingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TraceTrackingDb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ElectronicTraceTrackings" EntityType="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTracking" />
+          <EntitySet Name="ElectronicTraceTrackingDetails" EntityType="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTrackingDetail" />
+          <AssociationSet Name="FK_ElectronicTraceTracking" Association="FXA.DPSE.DB.TraceTrackingModel.FK_ElectronicTraceTracking">
+            <End Role="ElectronicTraceTracking" EntitySet="ElectronicTraceTrackings" />
+            <End Role="ElectronicTraceTrackingDetail" EntitySet="ElectronicTraceTrackingDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ElectronicTraceTracking">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RequestId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChannelType" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ClientSessionId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClientDeviceId" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="ClientIpAddressV4" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ChequeCount" Type="Int32" Nullable="false" />
+          <Property Name="TotalTransactionAmount" Type="Int32" Nullable="false" />
+          <Property Name="DepositAccountName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DepositAccountNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DepositAccountBsbCode" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+          <Property Name="DepositAccountType" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="DateTimeCreated" Type="DateTime" Nullable="false" Precision="7" />
+          <NavigationProperty Name="ElectronicTraceTrackingDetails" Relationship="FXA.DPSE.DB.TraceTrackingModel.FK_ElectronicTraceTracking" FromRole="ElectronicTraceTracking" ToRole="ElectronicTraceTrackingDetail" />
+        </EntityType>
+        <EntityType Name="ElectronicTraceTrackingDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ElectronicTraceTrackingId" Type="Int64" Nullable="false" ConcurrencyMode="Fixed" />
+          <Property Name="ChequeTraceTrackingCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" ConcurrencyMode="None" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="ElectronicTraceTracking" Relationship="FXA.DPSE.DB.TraceTrackingModel.FK_ElectronicTraceTracking" FromRole="ElectronicTraceTrackingDetail" ToRole="ElectronicTraceTracking" />
+        </EntityType>
+        <Association Name="FK_ElectronicTraceTracking">
+          <End Type="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTracking" Role="ElectronicTraceTracking" Multiplicity="1" />
+          <End Type="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTrackingDetail" Role="ElectronicTraceTrackingDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ElectronicTraceTracking">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ElectronicTraceTrackingDetail">
+              <PropertyRef Name="ElectronicTraceTrackingId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FXADPSEDBTraceTrackingModelStoreContainer" CdmEntityContainer="TraceTrackingDb">
+          <EntitySetMapping Name="ElectronicTraceTrackings">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTracking">
+              <MappingFragment StoreEntitySet="ElectronicTraceTracking">
+                <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+                <ScalarProperty Name="DepositAccountType" ColumnName="DepositAccountType" />
+                <ScalarProperty Name="DepositAccountBsbCode" ColumnName="DepositAccountBsbCode" />
+                <ScalarProperty Name="DepositAccountNumber" ColumnName="DepositAccountNumber" />
+                <ScalarProperty Name="DepositAccountName" ColumnName="DepositAccountName" />
+                <ScalarProperty Name="TotalTransactionAmount" ColumnName="TotalTransactionAmount" />
+                <ScalarProperty Name="ChequeCount" ColumnName="ChequeCount" />
+                <ScalarProperty Name="ClientIpAddressV4" ColumnName="ClientIpAddressV4" />
+                <ScalarProperty Name="ClientDeviceId" ColumnName="ClientDeviceId" />
+                <ScalarProperty Name="ClientSessionId" ColumnName="ClientSessionId" />
+                <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+                <ScalarProperty Name="RequestId" ColumnName="RequestId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ElectronicTraceTrackingDetails">
+            <EntityTypeMapping TypeName="FXA.DPSE.DB.TraceTrackingModel.ElectronicTraceTrackingDetail">
+              <MappingFragment StoreEntitySet="ElectronicTraceTrackingDetails">
+                <ScalarProperty Name="ChequeTraceTrackingCode" ColumnName="ChequeTraceTrackingCode" />
+                <ScalarProperty Name="ElectronicTraceTrackingId" ColumnName="ElectronicTraceTrackingId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

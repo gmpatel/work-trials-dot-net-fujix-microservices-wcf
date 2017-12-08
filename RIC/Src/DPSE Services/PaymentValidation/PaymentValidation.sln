@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.PaymentValidation.Endpoint", "FXA.DPSE.NAB.Service.PaymentValidation.Endpoint\FXA.DPSE.NAB.Service.PaymentValidation.Endpoint.csproj", "{FE68B468-82BE-404C-911D-8DA4B3E780FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentValidation.Common", "FXA.DPSE.Service.PaymentValidation.Common\FXA.DPSE.Service.PaymentValidation.Common.csproj", "{07239996-BD02-4282-8E23-5E5B4BD31737}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentValidation.Decomposer", "FXA.DPSE.Service.PaymentValidation.Decomposer\FXA.DPSE.Service.PaymentValidation.Decomposer.csproj", "{BB70179C-5ED3-410B-A661-37332F098BBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentValidation", "PaymentValidation", "{641E41E1-18F4-41DC-B72A-90139E3C94E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{82F9ABF7-037F-412D-AFEF-A3A433312151}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentValidation", "FXA.DPSE.Service.PaymentValidation\FXA.DPSE.Service.PaymentValidation.csproj", "{0E3FB9EB-2044-436D-835F-9EBFCD466679}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D104897E-3BDA-4ABC-8FC3-4E1882205893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.PaymentValidation.Test.Unit", "FXA.DPSE.Service.PaymentValidation.Test.Unit\FXA.DPSE.Service.PaymentValidation.Test.Unit.csproj", "{957A86DD-6D7E-4D4D-AF7A-872152A0350B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.Decomposer.Test.Unit", "FXA.DPSE.Service.Decomposer.Test.Unit\FXA.DPSE.Service.Decomposer.Test.Unit.csproj", "{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FXA.DPSE.NAB.Service.PaymentValidation.Endpoint\\FXA.DPSE.NAB.Service.PaymentValidation.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName1 = PaymentValidation.sln
+		SccProjectName1 = FXA.DPSE.NAB.Service.PaymentValidation.Endpoint
+		SccLocalPath1 = FXA.DPSE.NAB.Service.PaymentValidation.Endpoint
+		SccProjectUniqueName2 = FXA.DPSE.Service.PaymentValidation.Common\\FXA.DPSE.Service.PaymentValidation.Common.csproj
+		SccProjectTopLevelParentUniqueName2 = PaymentValidation.sln
+		SccProjectName2 = FXA.DPSE.Service.PaymentValidation.Common
+		SccLocalPath2 = FXA.DPSE.Service.PaymentValidation.Common
+		SccProjectUniqueName3 = FXA.DPSE.Service.PaymentValidation.Decomposer\\FXA.DPSE.Service.PaymentValidation.Decomposer.csproj
+		SccProjectTopLevelParentUniqueName3 = PaymentValidation.sln
+		SccProjectName3 = FXA.DPSE.Service.PaymentValidation.Decomposer
+		SccLocalPath3 = FXA.DPSE.Service.PaymentValidation.Decomposer
+		SccProjectUniqueName4 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName4 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath4 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName5 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName5 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath5 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName6 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName6 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath6 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName7 = FXA.DPSE.Service.PaymentValidation\\FXA.DPSE.Service.PaymentValidation.csproj
+		SccProjectTopLevelParentUniqueName7 = PaymentValidation.sln
+		SccProjectName7 = FXA.DPSE.Service.PaymentValidation
+		SccLocalPath7 = FXA.DPSE.Service.PaymentValidation
+		SccProjectUniqueName8 = FXA.DPSE.Service.PaymentValidation.Test.Unit\\FXA.DPSE.Service.PaymentValidation.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName8 = PaymentValidation.sln
+		SccProjectName8 = FXA.DPSE.Service.PaymentValidation.Test.Unit
+		SccLocalPath8 = FXA.DPSE.Service.PaymentValidation.Test.Unit
+		SccProjectUniqueName9 = FXA.DPSE.Service.Decomposer.Test.Unit\\FXA.DPSE.Service.Decomposer.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName9 = PaymentValidation.sln
+		SccProjectName9 = FXA.DPSE.Service.Decomposer.Test.Unit
+		SccLocalPath9 = FXA.DPSE.Service.Decomposer.Test.Unit
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE68B468-82BE-404C-911D-8DA4B3E780FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE68B468-82BE-404C-911D-8DA4B3E780FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE68B468-82BE-404C-911D-8DA4B3E780FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE68B468-82BE-404C-911D-8DA4B3E780FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07239996-BD02-4282-8E23-5E5B4BD31737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB70179C-5ED3-410B-A661-37332F098BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB70179C-5ED3-410B-A661-37332F098BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB70179C-5ED3-410B-A661-37332F098BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB70179C-5ED3-410B-A661-37332F098BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957A86DD-6D7E-4D4D-AF7A-872152A0350B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957A86DD-6D7E-4D4D-AF7A-872152A0350B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957A86DD-6D7E-4D4D-AF7A-872152A0350B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957A86DD-6D7E-4D4D-AF7A-872152A0350B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE68B468-82BE-404C-911D-8DA4B3E780FB} = {641E41E1-18F4-41DC-B72A-90139E3C94E4}
+		{07239996-BD02-4282-8E23-5E5B4BD31737} = {641E41E1-18F4-41DC-B72A-90139E3C94E4}
+		{BB70179C-5ED3-410B-A661-37332F098BBF} = {641E41E1-18F4-41DC-B72A-90139E3C94E4}
+		{0E3FB9EB-2044-436D-835F-9EBFCD466679} = {641E41E1-18F4-41DC-B72A-90139E3C94E4}
+		{D104897E-3BDA-4ABC-8FC3-4E1882205893} = {641E41E1-18F4-41DC-B72A-90139E3C94E4}
+		{957A86DD-6D7E-4D4D-AF7A-872152A0350B} = {D104897E-3BDA-4ABC-8FC3-4E1882205893}
+		{F0A9DC4B-1A6C-43A9-ACA6-4302B25D8D98} = {D104897E-3BDA-4ABC-8FC3-4E1882205893}
+	EndGlobalSection
+EndGlobal

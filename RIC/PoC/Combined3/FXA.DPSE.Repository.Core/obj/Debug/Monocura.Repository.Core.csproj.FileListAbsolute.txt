@@ -1,0 +1,10 @@
+D:\Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.dll.config
+D:\Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.dll
+D:\Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.pdb
+D:\Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\obj\Debug\Monocura.Repository.Core.dll
+D:\Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\obj\Debug\Monocura.Repository.Core.pdb
+D:\Vahid.Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.dll.config
+D:\Vahid.Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.dll
+D:\Vahid.Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\bin\Debug\Monocura.Repository.Core.pdb
+D:\Vahid.Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\obj\Debug\Monocura.Repository.Core.dll
+D:\Vahid.Private\Open Source\CloudMonkey\MonocuraWebAPI\Src\MonocuraWebAPI\Monocura.Repository.Core\obj\Debug\Monocura.Repository.Core.pdb

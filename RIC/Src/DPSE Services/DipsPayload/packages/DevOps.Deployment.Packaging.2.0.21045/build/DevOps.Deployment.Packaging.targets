@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    
+    <!--<UsingTask AssemblyFile="$(MSBuildThisFileDirectory)..\tools\nuget.exe" TaskName="NuGet.Tasks.NuGetRip" />-->
+    
+    <PropertyGroup>
+        <MajorVersion Condition="'$(MajorVersion)' == ''">1</MajorVersion>
+        <MinorVersion Condition="'$(MinorVersion)' == ''">0</MinorVersion>
+        <BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+        <Revision Condition="'$(Revision)' == ''">0</Revision>
+        <ComponentVersion>$(MajorVersion).$(MinorVersion).$(BuildNumber).$(Revision)</ComponentVersion>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <BuildDependsOn>
+          $(BuildDependsOn);
+          ComponentPackage
+        </BuildDependsOn>
+    </PropertyGroup>
+
+    <Target Name="ComponentPackage">
+	    <PropertyGroup>
+		    <OutPutPackageDir Condition="!Exists('$(OutDir)_PublishedWebsites\$(AssemblyName)')">$(OutDir)</OutPutPackageDir>
+		    <OutPutPackageDir Condition="Exists('$(OutDir)_PublishedWebsites\$(AssemblyName)')">$(OutDir)_PublishedWebsites\$(AssemblyName)\bin\</OutPutPackageDir>
+	    </PropertyGroup>
+	    <PropertyGroup>
+		    <BasePackageDir Condition="!Exists('$(OutDir)_PublishedWebsites\$(AssemblyName)')">$(MSBuildProjectDirectory)</BasePackageDir>
+		    <BasePackageDir Condition="Exists('$(OutDir)_PublishedWebsites\$(AssemblyName)')">$(OutDir)_PublishedWebsites\$(AssemblyName)</BasePackageDir>
+	    </PropertyGroup>
+	<Message Text="Out: $(OutDir)" />
+	<Message Text="Pack: $(OutPutPackageDir)" />
+	<Message Text="Base: $(BasePackageDir)" />
+      <Exec Command='"$(MSBuildThisFileDirectory)..\tools\nuget.exe" rip "$(MSBuildProjectFullPath)" -BasePath "$(BasePackageDir)" -Version $(ComponentVersion) -OutputDirectory "$(MSBuildProjectDirectory)\.deploy" -OutDir "$(OutPutPackageDir)\" -Configuration $(Configuration)' />
+        <!--<NuGetRip ProjectFile="$(MSBuildProjectFullPath)" BasePath="$(MSBuildProjectDirectory)" Version="$(ComponentVersion)" OutputDirectory="$(MSBuildProjectDirectory)" OutDir="$(OutDir)" Configuration="$(Configuration)"  />-->
+    </Target>
+</Project>

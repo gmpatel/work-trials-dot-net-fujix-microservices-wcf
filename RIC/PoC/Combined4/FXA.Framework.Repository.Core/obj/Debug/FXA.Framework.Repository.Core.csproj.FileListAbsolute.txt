@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll.config
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined4\FXA.Framework.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.pdb

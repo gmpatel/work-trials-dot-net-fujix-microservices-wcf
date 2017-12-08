@@ -1,0 +1,11 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.FullNetFx.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.FullNetFx.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\bin\Debug\Serilog.FullNetFx.xml
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\obj\Debug\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\obj\Debug\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Framework\Common\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer\obj\Debug\FXA.DPSE.Framework.Serilog.Sinks.MSSqlServer.csprojResolveAssemblyReference.cache

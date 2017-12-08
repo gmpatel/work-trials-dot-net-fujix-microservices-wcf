@@ -1,0 +1,5 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.Common\bin\Debug\FXA.DPSE.Service.Audit.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.Common\bin\Debug\FXA.DPSE.Service.Audit.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.Common\obj\Debug\FXA.DPSE.Service.Audit.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.Common\obj\Debug\FXA.DPSE.Service.Audit.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\Audit\FXA.DPSE.Service.Audit.Common\obj\Debug\FXA.DPSE.Service.Audit.Common.csprojResolveAssemblyReference.cache

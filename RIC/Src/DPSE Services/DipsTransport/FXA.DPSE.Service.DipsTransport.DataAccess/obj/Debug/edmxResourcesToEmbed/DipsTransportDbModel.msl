@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBDipsTransportModelStoreContainer" CdmEntityContainer="DipsTransportDb">
+    <EntitySetMapping Name="Transmissions">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsTransportModel.Transmission">
+        <MappingFragment StoreEntitySet="Transmission">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RetryCount" ColumnName="RetryCount" />
+          <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+          <ScalarProperty Name="FileSHAHash" ColumnName="FileSHAHash" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="TransportedDateTime" ColumnName="TransportedDateTime" />
+          <ScalarProperty Name="CreationDateTime" ColumnName="CreationDateTime" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransmissionBatches">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.DipsTransportModel.TransmissionBatch">
+        <MappingFragment StoreEntitySet="TransmissionBatch">
+          <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="PaymentInstructionId" ColumnName="PaymentInstructionId" />
+          <ScalarProperty Name="TransmissionId" ColumnName="TransmissionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

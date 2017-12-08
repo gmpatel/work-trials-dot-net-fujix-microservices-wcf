@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Scheduler.Service", "Framework.Scheduler.Service\Framework.Scheduler.Service.csproj", "{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F624E4E7-66FF-4E2E-9B4E-30C7B4A20633}"
+	ProjectSection(SolutionItems) = preProject
+		FXA.DPSE.snk = FXA.DPSE.snk
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Scheduler.Service.Infrastructure", "Framework.Scheduler.Service.Infrastructure\Framework.Scheduler.Service.Infrastructure.csproj", "{2010C60D-ACDC-4320-8E13-4B437F01FFA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Scheduler.Service.Configuration", "Framework.Scheduler.Service.Configuration\Framework.Scheduler.Service.Configuration.csproj", "{1F8338FF-E97E-46D0-90A1-AD0A0DD2E2AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom Message Dispatcher Jobs", "Custom Message Dispatcher Jobs", "{E7058895-6C10-4A05-8525-5FCAC446AB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageDispatcher.DipsTransport", "MessageDispatcher.DipsTransport\MessageDispatcher.DipsTransport.csproj", "{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Model", "Framework.Model\Framework.Model.csproj", "{C55B3823-791E-46E8-938F-A429862BABB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Web.Service", "Framework.Web.Service\Framework.Web.Service.csproj", "{10DA4086-245E-4BF1-BC01-B9D0FA1D3AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Web.Service.Library", "Framework.Web.Service.Library\Framework.Web.Service.Library.csproj", "{EC748379-52AD-425E-AC8B-746927FFD49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Common", "Framework.Common\Framework.Common.csproj", "{933BB9BF-5414-4400-9B69-B29436FBBC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.TestConsole", "Framework.TestConsole\Framework.TestConsole.csproj", "{38A1580E-25E1-4A44-9A06-6DB45E95CE47}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gmpatel.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Framework.Scheduler.Service\\Framework.Scheduler.Service.csproj
+		SccProjectName1 = Framework.Scheduler.Service
+		SccLocalPath1 = Framework.Scheduler.Service
+		SccProjectUniqueName2 = Framework.Scheduler.Service.Infrastructure\\Framework.Scheduler.Service.Infrastructure.csproj
+		SccProjectName2 = Framework.Scheduler.Service.Infrastructure
+		SccLocalPath2 = Framework.Scheduler.Service.Infrastructure
+		SccProjectUniqueName3 = Framework.Scheduler.Service.Configuration\\Framework.Scheduler.Service.Configuration.csproj
+		SccProjectName3 = Framework.Scheduler.Service.Configuration
+		SccLocalPath3 = Framework.Scheduler.Service.Configuration
+		SccProjectUniqueName4 = MessageDispatcher.DipsTransport\\MessageDispatcher.DipsTransport.csproj
+		SccProjectTopLevelParentUniqueName4 = FXA.DPSE.sln
+		SccProjectName4 = MessageDispatcher.DipsTransport
+		SccLocalPath4 = MessageDispatcher.DipsTransport
+		SccProjectUniqueName5 = Framework.Model\\Framework.Model.csproj
+		SccProjectName5 = Framework.Model
+		SccLocalPath5 = Framework.Model
+		SccProjectUniqueName6 = Framework.Web.Service.Library\\Framework.Web.Service.Library.csproj
+		SccProjectName6 = Framework.Web.Service.Library
+		SccLocalPath6 = Framework.Web.Service.Library
+		SccProjectUniqueName7 = Framework.Web.Service\\Framework.Web.Service.csproj
+		SccProjectName7 = Framework.Web.Service
+		SccLocalPath7 = Framework.Web.Service
+		SccProjectUniqueName8 = Framework.Common\\Framework.Common.csproj
+		SccProjectName8 = Framework.Common
+		SccLocalPath8 = Framework.Common
+		SccProjectUniqueName9 = Framework.TestConsole\\Framework.TestConsole.csproj
+		SccProjectName9 = Framework.TestConsole
+		SccLocalPath9 = Framework.TestConsole
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5067F4E1-20D7-4524-BA3E-7F7AB11CB28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2010C60D-ACDC-4320-8E13-4B437F01FFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2010C60D-ACDC-4320-8E13-4B437F01FFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2010C60D-ACDC-4320-8E13-4B437F01FFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2010C60D-ACDC-4320-8E13-4B437F01FFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F8338FF-E97E-46D0-90A1-AD0A0DD2E2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8338FF-E97E-46D0-90A1-AD0A0DD2E2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F8338FF-E97E-46D0-90A1-AD0A0DD2E2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F8338FF-E97E-46D0-90A1-AD0A0DD2E2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55B3823-791E-46E8-938F-A429862BABB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55B3823-791E-46E8-938F-A429862BABB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55B3823-791E-46E8-938F-A429862BABB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55B3823-791E-46E8-938F-A429862BABB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DA4086-245E-4BF1-BC01-B9D0FA1D3AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DA4086-245E-4BF1-BC01-B9D0FA1D3AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DA4086-245E-4BF1-BC01-B9D0FA1D3AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DA4086-245E-4BF1-BC01-B9D0FA1D3AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC748379-52AD-425E-AC8B-746927FFD49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC748379-52AD-425E-AC8B-746927FFD49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC748379-52AD-425E-AC8B-746927FFD49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC748379-52AD-425E-AC8B-746927FFD49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933BB9BF-5414-4400-9B69-B29436FBBC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933BB9BF-5414-4400-9B69-B29436FBBC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933BB9BF-5414-4400-9B69-B29436FBBC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933BB9BF-5414-4400-9B69-B29436FBBC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A1580E-25E1-4A44-9A06-6DB45E95CE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A1580E-25E1-4A44-9A06-6DB45E95CE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A1580E-25E1-4A44-9A06-6DB45E95CE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A1580E-25E1-4A44-9A06-6DB45E95CE47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B7B66E7-447D-4633-B84C-ED228D7E2EB0} = {E7058895-6C10-4A05-8525-5FCAC446AB74}
+	EndGlobalSection
+EndGlobal

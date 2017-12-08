@@ -1,0 +1,137 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B3868002-9BB1-4636-B463-64D7FEDDC505}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload.DataAccess", "FXA.DPSE.Service.DipsPayload.DataAccess\FXA.DPSE.Service.DipsPayload.DataAccess.csproj", "{EBB68583-B5EB-49AD-A635-AEE30B555868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload.Business", "FXA.DPSE.Service.DipsPayload.Business\FXA.DPSE.Service.DipsPayload.Business.csproj", "{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload", "FXA.DPSE.Service.DipsPayload\FXA.DPSE.Service.DipsPayload.csproj", "{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.DipsPayload.Endpoint", "FXA.DPSE.NAB.Service.DipsPayload.Endpoint\FXA.DPSE.NAB.Service.DipsPayload.Endpoint.csproj", "{6BC80C3E-6F63-4275-9304-6BFB8C260173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload.Test.Unit", "FXA.DPSE.Service.DipsPayload.Test.Unit\FXA.DPSE.Service.DipsPayload.Test.Unit.csproj", "{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload.Common", "FXA.DPSE.Service.DipsPayload.Common\FXA.DPSE.Service.DipsPayload.Common.csproj", "{18461A02-62A9-4B6A-97A9-FB4C409F928E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsPayload.Business.Entity", "FXA.DPSE.Service.DipsPayload.Business.Entity\FXA.DPSE.Service.DipsPayload.Business.Entity.csproj", "{94842334-8BB2-4C13-97AA-4DCD9474680D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DipsPayload", "DipsPayload", "{6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName1 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName2 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName3 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName4 = FXA.DPSE.Service.DipsPayload.DataAccess\\FXA.DPSE.Service.DipsPayload.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName4 = DipsPayloadService.sln
+		SccProjectName4 = FXA.DPSE.Service.DipsPayload.DataAccess
+		SccLocalPath4 = FXA.DPSE.Service.DipsPayload.DataAccess
+		SccProjectUniqueName5 = FXA.DPSE.Service.DipsPayload.Business\\FXA.DPSE.Service.DipsPayload.Business.csproj
+		SccProjectTopLevelParentUniqueName5 = DipsPayloadService.sln
+		SccProjectName5 = FXA.DPSE.Service.DipsPayload.Business
+		SccLocalPath5 = FXA.DPSE.Service.DipsPayload.Business
+		SccProjectUniqueName6 = FXA.DPSE.Service.DipsPayload\\FXA.DPSE.Service.DipsPayload.csproj
+		SccProjectTopLevelParentUniqueName6 = DipsPayloadService.sln
+		SccProjectName6 = FXA.DPSE.Service.DipsPayload
+		SccLocalPath6 = FXA.DPSE.Service.DipsPayload
+		SccProjectUniqueName7 = FXA.DPSE.NAB.Service.DipsPayload.Endpoint\\FXA.DPSE.NAB.Service.DipsPayload.Endpoint.csproj
+		SccProjectTopLevelParentUniqueName7 = DipsPayloadService.sln
+		SccProjectName7 = FXA.DPSE.NAB.Service.DipsPayload.Endpoint
+		SccLocalPath7 = FXA.DPSE.NAB.Service.DipsPayload.Endpoint
+		SccProjectUniqueName8 = FXA.DPSE.Service.DipsPayload.Test.Unit\\FXA.DPSE.Service.DipsPayload.Test.Unit.csproj
+		SccProjectTopLevelParentUniqueName8 = DipsPayloadService.sln
+		SccProjectName8 = FXA.DPSE.Service.DipsPayload.Test.Unit
+		SccLocalPath8 = FXA.DPSE.Service.DipsPayload.Test.Unit
+		SccProjectUniqueName9 = FXA.DPSE.Service.DipsPayload.Common\\FXA.DPSE.Service.DipsPayload.Common.csproj
+		SccProjectTopLevelParentUniqueName9 = DipsPayloadService.sln
+		SccProjectName9 = FXA.DPSE.Service.DipsPayload.Common
+		SccLocalPath9 = FXA.DPSE.Service.DipsPayload.Common
+		SccProjectUniqueName10 = FXA.DPSE.Service.DipsPayload.Business.Entity\\FXA.DPSE.Service.DipsPayload.Business.Entity.csproj
+		SccProjectTopLevelParentUniqueName10 = DipsPayloadService.sln
+		SccProjectName10 = FXA.DPSE.Service.DipsPayload.Business.Entity
+		SccLocalPath10 = FXA.DPSE.Service.DipsPayload.Business.Entity
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB68583-B5EB-49AD-A635-AEE30B555868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB68583-B5EB-49AD-A635-AEE30B555868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB68583-B5EB-49AD-A635-AEE30B555868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB68583-B5EB-49AD-A635-AEE30B555868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E5DF96-50F5-4ECD-919C-DE3A6F38C963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC80C3E-6F63-4275-9304-6BFB8C260173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC80C3E-6F63-4275-9304-6BFB8C260173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC80C3E-6F63-4275-9304-6BFB8C260173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC80C3E-6F63-4275-9304-6BFB8C260173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18461A02-62A9-4B6A-97A9-FB4C409F928E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18461A02-62A9-4B6A-97A9-FB4C409F928E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18461A02-62A9-4B6A-97A9-FB4C409F928E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18461A02-62A9-4B6A-97A9-FB4C409F928E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94842334-8BB2-4C13-97AA-4DCD9474680D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94842334-8BB2-4C13-97AA-4DCD9474680D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94842334-8BB2-4C13-97AA-4DCD9474680D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94842334-8BB2-4C13-97AA-4DCD9474680D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBB68583-B5EB-49AD-A635-AEE30B555868} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{52E5DF96-50F5-4ECD-919C-DE3A6F38C963} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{83D4C0BB-AABE-448D-AD6C-D8F4CACD9F57} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{6BC80C3E-6F63-4275-9304-6BFB8C260173} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{A2D9BF5A-F33A-4F33-88CE-59F0D34E73EF} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{18461A02-62A9-4B6A-97A9-FB4C409F928E} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+		{94842334-8BB2-4C13-97AA-4DCD9474680D} = {6700D0BA-9A2D-4D23-AAD3-50C3E622BB62}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.core.2.1.0-rc1-build3168\build\portable-net45+win8+wp8+wpa81\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.1.0-rc1-build3168\build\portable-net45+win8+wp8+wpa81\xunit.core.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ADC4350-DC2B-4C45-B260-00C28E75074A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Service.DipsTransport.Test.Unit</RootNamespace>
+    <AssemblyName>FXA.DPSE.Service.DipsTransport.Test.Unit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>78e3b51d</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq, Version=4.2.1402.2112, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WcfMock, Version=1.0.35544.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WCFMock.1.0.35544.0\lib\net45\WcfMock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.1.0.3168, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.1.0-rc1-build3168\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.1.0.3168, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.1.0-rc1-build3168\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.1.0.3168, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.1.0-rc1-build3168\lib\net35\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DipsTransportServiceTest.cs" />
+    <Compile Include="Extensions\MoqExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9b36379c-e561-4923-97a9-1b5175c88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj">
+      <Project>{b0b59e31-f4e0-438f-8dd1-7655c121d7af}</Project>
+      <Name>FXA.DPSE.Framework.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.DB.DipsTransport\FXA.DPSE.DB.DipsTransport.sqlproj">
+      <Project>{f9e5935f-9cd0-4efc-a2dc-f25375dfffd1}</Project>
+      <Name>FXA.DPSE.DB.DipsTransport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.NAB.Service.DipsTransport.Endpoint\FXA.DPSE.NAB.Service.DipsTransport.Endpoint.csproj">
+      <Project>{42faa868-187f-44ec-9e71-5f4cdfa2e6fb}</Project>
+      <Name>FXA.DPSE.NAB.Service.DipsTransport.Endpoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsTransport.Business.Entities\FXA.DPSE.Service.DipsTransport.Business.Entities.csproj">
+      <Project>{a3276ed0-92b3-4da8-81d8-d3d6c776547b}</Project>
+      <Name>FXA.DPSE.Service.DipsTransport.Business.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsTransport.Business\FXA.DPSE.Service.DipsTransport.Business.csproj">
+      <Project>{cd98499b-18c1-416d-af42-acc898aa0901}</Project>
+      <Name>FXA.DPSE.Service.DipsTransport.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsTransport.Common\FXA.DPSE.Service.DipsTransport.Common.csproj">
+      <Project>{54254ebd-5eec-4092-af32-216e26a24835}</Project>
+      <Name>FXA.DPSE.Service.DipsTransport.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsTransport.DataAccess\FXA.DPSE.Service.DipsTransport.DataAccess.csproj">
+      <Project>{6fafeb2b-2825-477c-8543-579e946aaa08}</Project>
+      <Name>FXA.DPSE.Service.DipsTransport.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FXA.DPSE.Service.DipsTransport\FXA.DPSE.Service.DipsTransport.csproj">
+      <Project>{9a16892c-4bfe-476c-a2c0-77ba6964b8dd}</Project>
+      <Name>FXA.DPSE.Service.DipsTransport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\xunit.core.2.1.0-rc1-build3168\build\portable-net45+win8+wp8+wpa81\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.1.0-rc1-build3168\build\portable-net45+win8+wp8+wpa81\xunit.core.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FXA.DPSE.DB.DipsPayloadModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DipsPayloadDb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PayloadDetails" EntityType="FXA.DPSE.DB.DipsPayloadModel.PayloadDetail" />
+    <EntitySet Name="Payloads" EntityType="FXA.DPSE.DB.DipsPayloadModel.Payload" />
+    <AssociationSet Name="FK_Payload" Association="FXA.DPSE.DB.DipsPayloadModel.FK_Payload">
+      <End Role="Payload" EntitySet="Payloads" />
+      <End Role="PayloadDetail" EntitySet="PayloadDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PayloadDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PayloadId" Type="Int64" Nullable="false" />
+    <Property Name="ElectronicTraceTrackingId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Payload" Relationship="FXA.DPSE.DB.DipsPayloadModel.FK_Payload" FromRole="PayloadDetail" ToRole="Payload" />
+  </EntityType>
+  <EntityType Name="Payload">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionId" Type="Int64" Nullable="false" />
+    <Property Name="ChannelType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateTimeCreated" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="RelativePath" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="LockedBy" Type="Guid" />
+    <Property Name="Locked" Type="Boolean" Nullable="false" />
+    <Property Name="DateTimeLocked" Type="DateTime" Precision="7" />
+    <Property Name="Transported" Type="Boolean" Nullable="false" />
+    <Property Name="DateTimeTransported" Type="DateTime" Precision="7" />
+    <NavigationProperty Name="PayloadDetails" Relationship="FXA.DPSE.DB.DipsPayloadModel.FK_Payload" FromRole="Payload" ToRole="PayloadDetail" />
+  </EntityType>
+  <Association Name="FK_Payload">
+    <End Type="FXA.DPSE.DB.DipsPayloadModel.Payload" Role="Payload" Multiplicity="1" />
+    <End Type="FXA.DPSE.DB.DipsPayloadModel.PayloadDetail" Role="PayloadDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payload">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PayloadDetail">
+        <PropertyRef Name="PayloadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

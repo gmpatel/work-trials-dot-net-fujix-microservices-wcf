@@ -1,0 +1,12 @@
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll.config
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.pdb
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.csprojResolveAssemblyReference.cache
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.dll
+D:\FXA.SourceCode\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll.config
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\bin\Debug\FXA.Framework.Repository.Core.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\PoC\Combined3\FXA.DPSE.Repository.Core\obj\Debug\FXA.Framework.Repository.Core.csprojResolveAssemblyReference.cache

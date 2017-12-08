@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{77F1EECD-3BFD-4B71-A7ED-998FB39F2A92}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Common", "..\..\DPSE Framework\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj", "{9B36379C-E561-4923-97A9-1B5175C88793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Framework.Service", "..\..\DPSE Framework\Service\FXA.DPSE.Framework.Service\FXA.DPSE.Framework.Service.csproj", "{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DTO", "..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj", "{97E7168E-1318-4C82-9C74-E08522270BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.DataAccess", "FXA.DPSE.Service.DipsTransport.DataAccess\FXA.DPSE.Service.DipsTransport.DataAccess.csproj", "{6FAFEB2B-2825-477C-8543-579E946AAA08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.Business", "FXA.DPSE.Service.DipsTransport.Business\FXA.DPSE.Service.DipsTransport.Business.csproj", "{CD98499B-18C1-416D-AF42-ACC898AA0901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport", "FXA.DPSE.Service.DipsTransport\FXA.DPSE.Service.DipsTransport.csproj", "{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.NAB.Service.DipsTransport.Endpoint", "FXA.DPSE.NAB.Service.DipsTransport.Endpoint\FXA.DPSE.NAB.Service.DipsTransport.Endpoint.csproj", "{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.Business.Test.Unit", "FXA.DPSE.Service.DipsTransport.Business.Test.Unit\FXA.DPSE.Service.DipsTransport.Business.Test.Unit.csproj", "{AB7BDC49-9DB2-4A67-8DD3-35D968232A1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.Business.Entities", "FXA.DPSE.Service.DipsTransport.Business.Entities\FXA.DPSE.Service.DipsTransport.Business.Entities.csproj", "{A3276ED0-92B3-4DA8-81D8-D3D6C776547B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.Common", "FXA.DPSE.Service.DipsTransport.Common\FXA.DPSE.Service.DipsTransport.Common.csproj", "{54254EBD-5EEC-4092-AF32-216E26A24835}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FXA.DPSE.DB.DipsTransport", "FXA.DPSE.DB.DipsTransport\FXA.DPSE.DB.DipsTransport.sqlproj", "{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FXA.DPSE.Service.DipsTransport.Test.Unit", "FXA.DPSE.Service.DipsTransport.Test.Unit\FXA.DPSE.Service.DipsTransport.Test.Unit.csproj", "{8ADC4350-DC2B-4C45-B260-00C28E75074A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.bps.epn.local/tfs/bpsprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common\\FXA.DPSE.Framework.Common.csproj
+		SccProjectName1 = ../../DPSE\u0020Framework/Common/FXA.DPSE.Framework.Common
+		SccLocalPath1 = ..\\..\\DPSE\u0020Framework\\Common\\FXA.DPSE.Framework.Common
+		SccProjectUniqueName2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service\\FXA.DPSE.Framework.Service.csproj
+		SccProjectName2 = ../../DPSE\u0020Framework/Service/FXA.DPSE.Framework.Service
+		SccLocalPath2 = ..\\..\\DPSE\u0020Framework\\Service\\FXA.DPSE.Framework.Service
+		SccProjectUniqueName3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO\\FXA.DPSE.Service.DTO.csproj
+		SccProjectName3 = ../../DPSE\u0020Messages/FXA.DPSE.Service.DTO
+		SccLocalPath3 = ..\\..\\DPSE\u0020Messages\\FXA.DPSE.Service.DTO
+		SccProjectUniqueName4 = FXA.DPSE.Service.DipsTransport.DataAccess\\FXA.DPSE.Service.DipsTransport.DataAccess.csproj
+		SccProjectName4 = FXA.DPSE.Service.DipsTransport.DataAccess
+		SccLocalPath4 = FXA.DPSE.Service.DipsTransport.DataAccess
+		SccProjectUniqueName5 = FXA.DPSE.Service.DipsTransport.Business\\FXA.DPSE.Service.DipsTransport.Business.csproj
+		SccProjectName5 = FXA.DPSE.Service.DipsTransport.Business
+		SccLocalPath5 = FXA.DPSE.Service.DipsTransport.Business
+		SccProjectUniqueName6 = FXA.DPSE.Service.DipsTransport\\FXA.DPSE.Service.DipsTransport.csproj
+		SccProjectName6 = FXA.DPSE.Service.DipsTransport
+		SccLocalPath6 = FXA.DPSE.Service.DipsTransport
+		SccProjectUniqueName7 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint\\FXA.DPSE.NAB.Service.DipsTransport.Endpoint.csproj
+		SccProjectName7 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint
+		SccLocalPath7 = FXA.DPSE.NAB.Service.DipsTransport.Endpoint
+		SccProjectUniqueName8 = FXA.DPSE.Service.DipsTransport.Business.Test.Unit\\FXA.DPSE.Service.DipsTransport.Business.Test.Unit.csproj
+		SccProjectName8 = FXA.DPSE.Service.DipsTransport.Business.Test.Unit
+		SccLocalPath8 = FXA.DPSE.Service.DipsTransport.Business.Test.Unit
+		SccProjectUniqueName9 = FXA.DPSE.Service.DipsTransport.Business.Entities\\FXA.DPSE.Service.DipsTransport.Business.Entities.csproj
+		SccProjectName9 = FXA.DPSE.Service.DipsTransport.Business.Entities
+		SccLocalPath9 = FXA.DPSE.Service.DipsTransport.Business.Entities
+		SccProjectUniqueName10 = FXA.DPSE.Service.DipsTransport.Common\\FXA.DPSE.Service.DipsTransport.Common.csproj
+		SccProjectName10 = FXA.DPSE.Service.DipsTransport.Common
+		SccLocalPath10 = FXA.DPSE.Service.DipsTransport.Common
+		SccProjectUniqueName11 = FXA.DPSE.DB.DipsTransport\\FXA.DPSE.DB.DipsTransport.sqlproj
+		SccProjectName11 = FXA.DPSE.DB.DipsTransport
+		SccLocalPath11 = FXA.DPSE.DB.DipsTransport
+		SccProjectUniqueName12 = FXA.DPSE.Service.DipsTransport.Test.Unit\\FXA.DPSE.Service.DipsTransport.Test.Unit.csproj
+		SccProjectName12 = FXA.DPSE.Service.DipsTransport.Test.Unit
+		SccLocalPath12 = FXA.DPSE.Service.DipsTransport.Test.Unit
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B36379C-E561-4923-97A9-1B5175C88793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E7168E-1318-4C82-9C74-E08522270BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAFEB2B-2825-477C-8543-579E946AAA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAFEB2B-2825-477C-8543-579E946AAA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAFEB2B-2825-477C-8543-579E946AAA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAFEB2B-2825-477C-8543-579E946AAA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD98499B-18C1-416D-AF42-ACC898AA0901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A16892C-4BFE-476C-A2C0-77BA6964B8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FAA868-187F-44EC-9E71-5F4CDFA2E6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7BDC49-9DB2-4A67-8DD3-35D968232A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7BDC49-9DB2-4A67-8DD3-35D968232A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7BDC49-9DB2-4A67-8DD3-35D968232A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7BDC49-9DB2-4A67-8DD3-35D968232A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3276ED0-92B3-4DA8-81D8-D3D6C776547B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3276ED0-92B3-4DA8-81D8-D3D6C776547B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3276ED0-92B3-4DA8-81D8-D3D6C776547B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3276ED0-92B3-4DA8-81D8-D3D6C776547B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54254EBD-5EEC-4092-AF32-216E26A24835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54254EBD-5EEC-4092-AF32-216E26A24835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54254EBD-5EEC-4092-AF32-216E26A24835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54254EBD-5EEC-4092-AF32-216E26A24835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E5935F-9CD0-4EFC-A2DC-F25375DFFFD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8ADC4350-DC2B-4C45-B260-00C28E75074A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ADC4350-DC2B-4C45-B260-00C28E75074A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ADC4350-DC2B-4C45-B260-00C28E75074A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ADC4350-DC2B-4C45-B260-00C28E75074A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

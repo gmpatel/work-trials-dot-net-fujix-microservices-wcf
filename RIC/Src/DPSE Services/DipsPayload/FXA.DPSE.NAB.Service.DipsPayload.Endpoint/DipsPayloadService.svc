@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="FXA.DPSE.Service.DipsPayload.IDipsPayloadService, FXA.DPSE.Service.DipsPayload" 
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf" 
+%> 

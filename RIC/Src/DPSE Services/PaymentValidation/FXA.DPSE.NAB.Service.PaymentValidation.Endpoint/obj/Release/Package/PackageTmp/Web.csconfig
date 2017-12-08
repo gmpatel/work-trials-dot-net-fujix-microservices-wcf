@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <serviceConfig>
+    <routingSlip xdt:Transform="Replace">
+      <validationService name="Limit" endpoint='@Model.GetValue("limitCheckingServiceEndpoint")' order="1" />
+      <validationService name="Codeline" endpoint='@Model.GetValue("codelineRulesServiceEndpoint")' order="2" />
+      <validationService name="Duplicate" endpoint='@Model.GetValue("duplicateIdentificationServiceEndpoint")' order="3" />
+    </routingSlip>
+  </serviceConfig>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+</configuration>

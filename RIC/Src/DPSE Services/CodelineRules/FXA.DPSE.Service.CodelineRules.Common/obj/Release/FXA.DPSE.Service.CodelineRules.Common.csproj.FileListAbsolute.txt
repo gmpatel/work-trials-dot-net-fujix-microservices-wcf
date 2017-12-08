@@ -1,0 +1,4 @@
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\bin\Release\FXA.DPSE.Service.CodelineRules.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\bin\Release\FXA.DPSE.Service.CodelineRules.Common.pdb
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\obj\Release\FXA.DPSE.Service.CodelineRules.Common.dll
+C:\Users\au101485\Data\TFS\bps\RIC\Main\Src\DPSE Services\CodelineRules\FXA.DPSE.Service.CodelineRules.Common\obj\Release\FXA.DPSE.Service.CodelineRules.Common.pdb

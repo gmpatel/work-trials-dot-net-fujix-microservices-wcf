@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0B59E31-F4E0-438F-8DD1-7655C121D7AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FXA.DPSE.Framework.Service</RootNamespace>
+    <AssemblyName>FXA.DPSE.Framework.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Wcf">
+      <HintPath>..\packages\Autofac.Wcf.4.0.0\lib\net45\Autofac.Integration.Wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WCF\Attributes\Error\ErrorBehavior.cs" />
+    <Compile Include="WCF\Attributes\Error\ErrorBehaviorBase.cs" />
+    <Compile Include="WCF\Attributes\Error\ErrorHandler.cs" />
+    <Compile Include="WCF\Attributes\Logging\DpseMessageCorrelationState.cs" />
+    <Compile Include="WCF\Attributes\Logging\LoggingAttribute.cs" />
+    <Compile Include="WCF\Attributes\Logging\LoggingMessageInspector.cs" />
+    <Compile Include="WCF\Attributes\Logging\MessageHelper.cs" />
+    <Compile Include="WCF\Attributes\Ping\PingEndpointBehavior.cs" />
+    <Compile Include="WCF\Attributes\Ping\PingEndpointBehaviorExtensionElement.cs" />
+    <Compile Include="WCF\Attributes\Ping\PingInvoker.cs" />
+    <Compile Include="WCF\Attributes\Ping\PingOperationBehavior.cs" />
+    <Compile Include="WCF\Attributes\ServiceBehaviorBase.cs" />
+    <Compile Include="WCF\Attributes\Validation\Core\IErrorMessageGenerator.cs" />
+    <Compile Include="WCF\Attributes\Validation\Core\IObjectValidator.cs" />
+    <Compile Include="WCF\Attributes\Validation\DpseValidationException.cs" />
+    <Compile Include="WCF\Attributes\Validation\Implementers\DataAnnotationsObjectValidator.cs" />
+    <Compile Include="WCF\Attributes\Validation\Implementers\ErrorMessageGenerator.cs" />
+    <Compile Include="WCF\Attributes\Validation\Implementers\NullCheckObjectValidator.cs" />
+    <Compile Include="WCF\Attributes\Validation\Implementers\ValidatableObjectValidator.cs" />
+    <Compile Include="WCF\Attributes\Validation\Implementers\ValidatingParameterInspector.cs" />
+    <Compile Include="WCF\Attributes\Validation\ValidationBehavior.cs" />
+    <Compile Include="WCF\Attributes\Validation\ValidationBehaviorExtensionElement.cs" />
+    <Compile Include="WCF\Business\BusinessEvent\DpseBusinessException.cs" />
+    <Compile Include="WCF\Business\BusinessEvent\DpseBusinessExceptionType.cs" />
+    <Compile Include="WCF\Business\BusinessEvent\DpseBusinessWarning.cs" />
+    <Compile Include="WCF\Business\BusinessEvent\DpseBusinessWarningType.cs" />
+    <Compile Include="WCF\Business\BusinessEvent\IDpseBusinessEvent.cs" />
+    <Compile Include="WCF\Business\BusinessResult.cs" />
+    <Compile Include="WCF\Business\DpseBusinessResultBase.cs" />
+    <Compile Include="WCF\Business\IDpseBusinessResult.cs" />
+    <Compile Include="WCF\DpseServiceBase.cs" />
+    <Compile Include="WCF\Host\RestServiceHostFactory.cs" />
+    <Compile Include="WCF\OperationContextExtensions.cs" />
+    <Compile Include="WCF\Proxy\Audit\AuditProxy.cs" />
+    <Compile Include="WCF\Proxy\Audit\AuditProxyFake.cs" />
+    <Compile Include="WCF\Proxy\Audit\AuditProxyRequest.cs" />
+    <Compile Include="WCF\Proxy\Audit\IAuditProxy.cs" />
+    <Compile Include="WCF\Proxy\Logging\ILoggingProxy.cs" />
+    <Compile Include="WCF\Proxy\Logging\LoggingProxy.cs" />
+    <Compile Include="WCF\Proxy\Logging\LoggingProxyFake.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DpseSettings.StyleCop" />
+    <None Include="FXA.DPSE.Framework.Service.nuspec" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DPSE Messages\FXA.DPSE.Service.DTO\FXA.DPSE.Service.DTO.csproj">
+      <Project>{97e7168e-1318-4c82-9c74-e08522270be9}</Project>
+      <Name>FXA.DPSE.Service.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\FXA.DPSE.Framework.Common\FXA.DPSE.Framework.Common.csproj">
+      <Project>{9b36379c-e561-4923-97a9-1b5175c88793}</Project>
+      <Name>FXA.DPSE.Framework.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

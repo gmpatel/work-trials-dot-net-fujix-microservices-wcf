@@ -1,0 +1,17 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Audit]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Audit] (Default Constraint)
+     Table rebuild
+       [dbo].[Audit] (Table)
+
+** Supporting actions

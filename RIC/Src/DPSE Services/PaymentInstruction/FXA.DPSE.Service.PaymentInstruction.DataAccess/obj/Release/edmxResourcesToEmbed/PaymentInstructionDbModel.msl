@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FXADPSEDBPaymentInstructionModelStoreContainer" CdmEntityContainer="PaymentInstructionDb">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="BSBCode" ColumnName="BSBCode" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountNames">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.AccountName">
+        <MappingFragment StoreEntitySet="AccountName">
+          <ScalarProperty Name="AccountName1" ColumnName="AccountName" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientSessions">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.ClientSession">
+        <MappingFragment StoreEntitySet="ClientSession">
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="CaptureDevice" ColumnName="CaptureDevice" />
+          <ScalarProperty Name="OSVersion" ColumnName="OSVersion" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="ClientVersion" ColumnName="ClientVersion" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="IpAddressV6" ColumnName="IpAddressV6" />
+          <ScalarProperty Name="IpAddressV4" ColumnName="IpAddressV4" />
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="UserId1" ColumnName="UserId1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentInstructions">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.PaymentInstruction">
+        <MappingFragment StoreEntitySet="PaymentInstruction">
+          <ScalarProperty Name="TransactionNarrative" ColumnName="TransactionNarrative" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="TransportedDateTime" ColumnName="TransportedDateTime" />
+          <ScalarProperty Name="BatchCreatedDateTime" ColumnName="BatchCreatedDateTime" />
+          <ScalarProperty Name="BatchPath" ColumnName="BatchPath" />
+          <ScalarProperty Name="ProcessingDateTime" ColumnName="ProcessingDateTime" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+          <ScalarProperty Name="ClientSessionId" ColumnName="ClientSessionId" />
+          <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+          <ScalarProperty Name="ChequeCount" ColumnName="ChequeCount" />
+          <ScalarProperty Name="ChannelType" ColumnName="ChannelType" />
+          <ScalarProperty Name="TotalTransactionAmountInCents" ColumnName="TotalTransactionAmountInCents" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vouchers">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.Voucher">
+        <MappingFragment StoreEntitySet="Voucher">
+          <ScalarProperty Name="IsNonPostingCheque" ColumnName="IsNonPostingCheque" />
+          <ScalarProperty Name="AmountInCents" ColumnName="AmountInCents" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="BSB" ColumnName="BSB" />
+          <ScalarProperty Name="ProcessingDateTime" ColumnName="ProcessingDateTime" />
+          <ScalarProperty Name="AuxDom" ColumnName="AuxDom" />
+          <ScalarProperty Name="TransactionCode" ColumnName="TransactionCode" />
+          <ScalarProperty Name="VoucherType" ColumnName="VoucherType" />
+          <ScalarProperty Name="SequenceId" ColumnName="SequenceId" />
+          <ScalarProperty Name="TrackingId" ColumnName="TrackingId" />
+          <ScalarProperty Name="PaymentInstructionId" ColumnName="PaymentInstructionId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoucherImages">
+      <EntityTypeMapping TypeName="FXA.DPSE.DB.PaymentInstructionModel.VoucherImage">
+        <MappingFragment StoreEntitySet="VoucherImage">
+          <ScalarProperty Name="RearImageSHA" ColumnName="RearImageSHA" />
+          <ScalarProperty Name="FrontImageSHA" ColumnName="FrontImageSHA" />
+          <ScalarProperty Name="RearImage" ColumnName="RearImage" />
+          <ScalarProperty Name="FrontImage" ColumnName="FrontImage" />
+          <ScalarProperty Name="VoucherId" ColumnName="VoucherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <connectionStrings>
+    <add name="PaymentInstructionDb" connectionString='@Model.GetValue("PaymentInstructionDbConnectionString")' providerName="System.Data.EntityClient" xdt:Transform="SetAttributes(connectionString)" />
+    <add name="DipsTransportDb" connectionString='@Model.GetValue("DipsTransportDbConnectionString")' providerName="System.Data.EntityClient" xdt:Transform="SetAttributes(connectionString)" />
+  </connectionStrings>
+  <frameworkConfig>
+    <services xdt:Transform="Replace">
+      <loggingService url='@Model.GetValue("loggingServiceUrl")' enabled="false" />
+      <auditService url='@Model.GetValue("auditServiceUrl")' enabled="false" />
+    </services>
+  </frameworkConfig>
+  <serviceConfig>
+    <pgpPublicKeyFile path="" />
+    <transports>
+      <transport name="dipsPayload" xdt:Transform="Replace" xdt:Locator="Match(name)">
+        <source type="Path" path='@Model.GetValue("dipsPayLoadSourcePath")' regex=".xml|.jpg|.tif" />
+        <destination type="Sftp" path='@Model.GetValue("dipsPayLoadDestinationPath")'>
+          <connection server='@Model.GetValue("dipsPayLoadConnectionServer")' port='@Model.GetValue("dipsPayLoadConnectionPort")' user='@Model.GetValue("dipsPayLoadConnectionUser")' password='@Model.GetValue("dipsPayLoadConnectionPassword")' certificatePath='@Model.GetValue("dipsPayLoadConnectionCertificatePath")' useCertificateInsteadPasswordForAuthorization="true" connectionTimeOutMiliSeconds="15000" idleTimeoutMiliSeconds="15000" />
+        </destination>
+        <tempLocation type="Path" path='@Model.GetValue("dipsPayLoadTempLocationPath")' />
+      </transport>
+      <transport name="dipsEod" xdt:Transform="Replace" xdt:Locator="Match(name)">
+        <source type="Path" path='@Model.GetValue("dipsEodSourcePath")' regex=".xml" />
+        <destination type="Sftp" path='@Model.GetValue("dipsEodDestinationPath")'>
+          <connection server='@Model.GetValue("dipsEodConnectionServer")' port='@Model.GetValue("dipsEodConnectionPort")' user='@Model.GetValue("dipsEodConnectionUser")' password='@Model.GetValue("dipsEodConnectionPassword")' certificatePath='@Model.GetValue("dipsEodConnectionCertificatePath")' useCertificateInsteadPasswordForAuthorization="true" connectionTimeOutMiliSeconds="15000" idleTimeoutMiliSeconds="15000" />
+        </destination>
+        <tempLocation type="Path" path='@Model.GetValue("dipsEodTempLocationPath")' />
+      </transport>
+    </transports>
+  </serviceConfig>
+</configuration>
